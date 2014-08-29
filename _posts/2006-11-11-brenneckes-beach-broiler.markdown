@@ -1,6 +1,7 @@
 ---
 author: admin
 comments: true
+status: publish
 date: 2006-11-11 19:05:53+00:00
 layout: default
 slug: brenneckes-beach-broiler

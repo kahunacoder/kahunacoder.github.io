@@ -1,5 +1,6 @@
 ---
 author: admin
+status: publish
 comments: true
 date: 2007-12-12 19:15:57+00:00
 layout: default

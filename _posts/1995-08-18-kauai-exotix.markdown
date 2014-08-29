@@ -19,4 +19,3 @@ tags:
 - Netsite Server Map
 - Perl
 ---
-Kauai Exotix

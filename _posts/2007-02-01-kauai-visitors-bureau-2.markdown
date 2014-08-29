@@ -1,6 +1,7 @@
 ---
 author: admin
 comments: true
+status: publish
 date: 2007-02-01 19:03:04+00:00
 layout: default
 slug: kauai-visitors-bureau-2
