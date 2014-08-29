@@ -466,3 +466,6 @@ section.success, .intro-text {
     border-color: #174B24;
     color: #ffffff;
 }
+.img-post{
+    height:100%;
+}
