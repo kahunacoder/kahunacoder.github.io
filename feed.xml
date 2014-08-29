@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kahuna Coder</title>
+    <description>Building web sites since 1995</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 28 Aug 2014 22:14:02 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Aug 2014 22:14:02 +0000</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Kauai Festivals</title>
+        <description>&lt;p&gt;This site features information about festivals on Kauai. This is a complete &lt;strong&gt;update&lt;/strong&gt; of their previous site that I built in &lt;strong&gt;2004&lt;/strong&gt;. The new site features a &lt;strong&gt;simpler navigation&lt;/strong&gt; system and &lt;strong&gt;larger images&lt;/strong&gt; to reflect the larger &lt;strong&gt;monitors&lt;/strong&gt; and higher &lt;strong&gt;resolutions&lt;/strong&gt; that are used by &lt;strong&gt;modern web surfers&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The site was built using my customized &lt;strong&gt;Zend Framework&lt;/strong&gt;. It uses &lt;strong&gt;Blueprint Css&lt;/strong&gt;, &lt;strong&gt;smarty&lt;/strong&gt;, &lt;strong&gt;adodb&lt;/strong&gt;, &lt;strong&gt;jquery&lt;/strong&gt;, &lt;strong&gt;pear&lt;/strong&gt; and &lt;strong&gt;HTML Quickforms&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Kauai Festivals web site features a &lt;strong&gt;floating navigation panel&lt;/strong&gt; on the front-end and a custom made &lt;strong&gt;CMS&lt;/strong&gt; which allows festival &lt;strong&gt;editors&lt;/strong&gt; to edit information about their festivals and the &lt;strong&gt;web master&lt;/strong&gt; has an &lt;strong&gt;interface&lt;/strong&gt; for approving the festivals and &lt;strong&gt;assigning editors&lt;/strong&gt; for each festival.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Nov 2009 14:58:48 +0000</pubDate>
+        <link>/tourism/visitor%20industry/kauai-festivals.html#portfolioModal-31</link>
+        <guid isPermaLink="true">/tourism/visitor%20industry/kauai-festivals.html</guid>
+        
+        <category>AJAX</category>
+        
+        <category>CMS</category>
+        
+        <category>CSS</category>
+        
+        <category>Flash</category>
+        
+        <category>HTML</category>
+        
+        <category>Javascript</category>
+        
+        <category>MySql</category>
+        
+        <category>PHP</category>
+        
+        <category>SVN</category>
+        
+        <category>Smarty</category>
+        
+        <category>Visitor Industry</category>
+        
+        <category>Zend Framework</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>tourism</category>
+        
+        <category>visitor industry</category>
+        
+      </item>
+    
+      <item>
+        <title>WebCapabilities.com</title>
+        <description>&lt;p&gt;I would of liked to have &lt;a href=&quot;http://www.tsunamimarketing.com/&quot;&gt;Tsunami Marketing&lt;/a&gt; &lt;strong&gt;design&lt;/strong&gt; my site but I really couldn’t afford them and I didn’t want to have to build the &lt;strong&gt;front-end&lt;/strong&gt; and a &lt;strong&gt;CMS&lt;/strong&gt; as well. Robert, my former boss, was experimenting with &lt;strong&gt;Wordpress&lt;/strong&gt; and found it to be quite good. That’s a &lt;strong&gt;huge endorsement&lt;/strong&gt; coming from him since his &lt;strong&gt;designs&lt;/strong&gt; are usually quite &lt;strong&gt;challenging&lt;/strong&gt; to &lt;strong&gt;build&lt;/strong&gt;. I was sure if he could live with any of the &lt;strong&gt;limitations imposed&lt;/strong&gt; by &lt;strong&gt;off the shelf software&lt;/strong&gt; so could I. I also thought it would be a great way to learn &lt;strong&gt;Wordpress&lt;/strong&gt; so I could use it in &lt;strong&gt;future projects&lt;/strong&gt;. I quickly found out how &lt;strong&gt;flexible&lt;/strong&gt; &lt;strong&gt;Wordpress&lt;/strong&gt; is without any &lt;strong&gt;coding&lt;/strong&gt;. With my &lt;strong&gt;existing capabilities&lt;/strong&gt; and &lt;strong&gt;skills&lt;/strong&gt; I found I could do just about &lt;strong&gt;anything&lt;/strong&gt; I wanted to a &lt;strong&gt;web site&lt;/strong&gt;. &lt;strong&gt;Wordpress&lt;/strong&gt; and &lt;strong&gt;Zend Framework&lt;/strong&gt; are now my &lt;strong&gt;tools of choice&lt;/strong&gt; when creating &lt;strong&gt;new sites&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I built this site using &lt;strong&gt;Wordpress&lt;/strong&gt; as a &lt;strong&gt;CMS&lt;/strong&gt;. I used &lt;strong&gt;PHP&lt;/strong&gt;, &lt;strong&gt;HTML&lt;/strong&gt; and &lt;strong&gt;CSS&lt;/strong&gt; to customize it. &lt;strong&gt;Not&lt;/strong&gt; being a &lt;strong&gt;designer&lt;/strong&gt; it was easy to build this using a &lt;strong&gt;theme&lt;/strong&gt; and then &lt;strong&gt;modifying&lt;/strong&gt; it. The &lt;strong&gt;screen captures&lt;/strong&gt; of the &lt;strong&gt;sites&lt;/strong&gt; I’ve done really &lt;strong&gt;stand out&lt;/strong&gt; against this &lt;strong&gt;themes&lt;/strong&gt; &lt;strong&gt;neutral colors&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I like the many &lt;strong&gt;plugins&lt;/strong&gt;, &lt;strong&gt;widgets&lt;/strong&gt; and &lt;strong&gt;themes&lt;/strong&gt; that are available for &lt;strong&gt;Wordpress&lt;/strong&gt; allowing you to &lt;strong&gt;customize&lt;/strong&gt; the look and add &lt;strong&gt;functionality&lt;/strong&gt; to the site without having to directly &lt;strong&gt;edit&lt;/strong&gt; the &lt;strong&gt;code&lt;/strong&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Nov 2009 02:46:54 +0000</pubDate>
+        <link>/developer/webcapabilities-com.html#portfolioModal-66</link>
+        <guid isPermaLink="true">/developer/webcapabilities-com.html</guid>
+        
+        <category>CMS</category>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>PHP</category>
+        
+        <category>Wordpress</category>
+        
+        
+        <category>developer</category>
+        
+      </item>
+    
+      <item>
+        <title>Holoholo Charters - II</title>
+        <description>&lt;p&gt;Holoholo Charters web site was a &lt;strong&gt;redesign&lt;/strong&gt; to take advantage of the higher &lt;strong&gt;resolutions&lt;/strong&gt; and larger &lt;strong&gt;monitors&lt;/strong&gt; used by web surfers today. We also &lt;strong&gt;streamlined&lt;/strong&gt; the &lt;strong&gt;checkout process&lt;/strong&gt; so users could make a &lt;strong&gt;reservation&lt;/strong&gt; from Holoholo’s site using their &lt;strong&gt;secure server&lt;/strong&gt; and &lt;strong&gt;Paypal&lt;/strong&gt; without leaving their site.&lt;/p&gt;
+
+&lt;p&gt;To achieve this we &lt;strong&gt;integrated&lt;/strong&gt; their &lt;strong&gt;reservation system&lt;/strong&gt; from &lt;a href=&quot;http://atcosoftware.net/&quot;&gt;Atco Software&lt;/a&gt; into thier new site. We used Atco Software’s &lt;strong&gt;API&lt;/strong&gt; to populate a &lt;strong&gt;Mysql&lt;/strong&gt; &lt;strong&gt;database&lt;/strong&gt; with the availability of their different tours. The &lt;strong&gt;database&lt;/strong&gt; was &lt;strong&gt;queried&lt;/strong&gt; and the &lt;strong&gt;data&lt;/strong&gt; was used to populate &lt;strong&gt;calendar date pickers&lt;/strong&gt; with only available dates for each of the tours. Once a tour was selected we &lt;strong&gt;checked the availability&lt;/strong&gt; in &lt;strong&gt;real time&lt;/strong&gt; to assure that the tour was still available, if it wasn’t, a selection of dates that were available for that tour was displayed. The user could then fill out &lt;strong&gt;forms&lt;/strong&gt; to collect all the necesarry &lt;strong&gt;data&lt;/strong&gt; to make the reservation. The reservation was paid for using &lt;strong&gt;Paypal’s API&lt;/strong&gt; and &lt;strong&gt;curl&lt;/strong&gt; as the &lt;strong&gt;credit card processor&lt;/strong&gt;. Once a successful transaction was completed the Atco reservation &lt;strong&gt;API&lt;/strong&gt; and &lt;strong&gt;curl&lt;/strong&gt; was used to reserve the tour and update the availability of that tour. A &lt;strong&gt;confirmation page&lt;/strong&gt; was displayed and an &lt;strong&gt;email&lt;/strong&gt; was sent to the user and Holoholo Charters.&lt;/p&gt;
+
+&lt;p&gt;The site features lots of &lt;strong&gt;photos&lt;/strong&gt;. Different &lt;strong&gt;slide shows&lt;/strong&gt; are viewable through out the site. Some &lt;strong&gt;load&lt;/strong&gt; and &lt;strong&gt;play&lt;/strong&gt; &lt;strong&gt;automatically&lt;/strong&gt; while others are &lt;strong&gt;loaded&lt;/strong&gt; &lt;strong&gt;on-demand&lt;/strong&gt; to &lt;strong&gt;reduce page down load size&lt;/strong&gt;. The site also features &lt;strong&gt;passenger contributed ** photos and allows passengers to **upload photos&lt;/strong&gt; from their tour. Photos are &lt;strong&gt;cropped&lt;/strong&gt; and or &lt;strong&gt;re-sized&lt;/strong&gt; to fit the &lt;strong&gt;layout&lt;/strong&gt; of the site using &lt;strong&gt;ImageMagick&lt;/strong&gt;. There is also a weather page which displays &lt;strong&gt;current weather&lt;/strong&gt; and &lt;strong&gt;surf conditions&lt;/strong&gt; updated daily.&lt;/p&gt;
+
+&lt;p&gt;The site also features a custom &lt;strong&gt;CMS&lt;/strong&gt; to allow Holoholo’s staff to &lt;strong&gt;make changes&lt;/strong&gt; and &lt;strong&gt;approve passenger&lt;/strong&gt; &lt;strong&gt;submitted&lt;/strong&gt; photos.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2009 15:46:51 +0000</pubDate>
+        <link>/e-commerce/tourism/tours/holoholo-charters-2.html#portfolioModal-34</link>
+        <guid isPermaLink="true">/e-commerce/tourism/tours/holoholo-charters-2.html</guid>
+        
+        <category>AJAX</category>
+        
+        <category>Animated Gifs</category>
+        
+        <category>CMS</category>
+        
+        <category>CSS</category>
+        
+        <category>Curl</category>
+        
+        <category>E-commerce</category>
+        
+        <category>HTML</category>
+        
+        <category>ImageMagick</category>
+        
+        <category>Javascript</category>
+        
+        <category>MySql</category>
+        
+        <category>PHP</category>
+        
+        <category>PayPal</category>
+        
+        <category>SOAP</category>
+        
+        <category>SSL</category>
+        
+        <category>SVN</category>
+        
+        <category>Smarty</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>e-commerce</category>
+        
+        <category>tourism</category>
+        
+        <category>tours</category>
+        
+      </item>
+    
+      <item>
+        <title>Air Ventures Hawaii</title>
+        <description>&lt;p&gt;&lt;strong&gt;Air Ventures Hawaii&lt;/strong&gt; features masthead graphics that play as a &lt;strong&gt;slide show on load&lt;/strong&gt;. There is also a slide show popup that uses &lt;strong&gt;smarty&lt;/strong&gt; conf files to load graphics and captions. The &lt;strong&gt;reservation system&lt;/strong&gt; integrates with A3H a &lt;strong&gt;third party&lt;/strong&gt; reservation system to check availability and make a tour reservation. &lt;strong&gt;Jquery&lt;/strong&gt; is used through out the site to create &lt;strong&gt;interactive components&lt;/strong&gt; and customized heading elements.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Dec 2008 18:59:46 +0000</pubDate>
+        <link>/e-commerce/tourism/tours/air-ventures-hawaii.html#portfolioModal-36</link>
+        <guid isPermaLink="true">/e-commerce/tourism/tours/air-ventures-hawaii.html</guid>
+        
+        <category>A3H</category>
+        
+        <category>AJAX</category>
+        
+        <category>CSS</category>
+        
+        <category>E-commerce</category>
+        
+        <category>HTML</category>
+        
+        <category>Javascript</category>
+        
+        <category>MySql</category>
+        
+        <category>PHP</category>
+        
+        <category>SVN</category>
+        
+        <category>Smarty</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>e-commerce</category>
+        
+        <category>tourism</category>
+        
+        <category>tours</category>
+        
+      </item>
+    
+      <item>
+        <title>Silver Falls Ranch</title>
+        <description>&lt;p&gt;Silver Falls Ranch uses &lt;a href=&quot;http://atcosoftware.net/&quot;&gt;Atco Software&lt;/a&gt; to book their rides. We query their &lt;strong&gt;API&lt;/strong&gt; using &lt;strong&gt;SOAP&lt;/strong&gt; to get the rides availability and then block any days that are booked from showing in the &lt;strong&gt;calendar&lt;/strong&gt; &lt;strong&gt;date picker&lt;/strong&gt; for all their rides. We store the availability info in a &lt;strong&gt;Mysql&lt;/strong&gt; &lt;strong&gt;database&lt;/strong&gt; which we then &lt;strong&gt;query&lt;/strong&gt; to create the &lt;strong&gt;calendars&lt;/strong&gt;. When a user decides to book a ride we then query Atco’s &lt;strong&gt;API&lt;/strong&gt; to confirm that the rides is still available. We then collect all the information required to reserve the ride on our &lt;strong&gt;secure server&lt;/strong&gt;. Once all information is collected we use &lt;strong&gt;curl&lt;/strong&gt; to post the reservation to Atco’s &lt;strong&gt;secure servers&lt;/strong&gt;. A confirmation page is displayed and &lt;strong&gt;email&lt;/strong&gt; is sent to the user and to Silver Falls Ranch.&lt;/p&gt;
+
+&lt;p&gt;Aside from the &lt;strong&gt;e-commerce&lt;/strong&gt; &lt;strong&gt;capabilities&lt;/strong&gt; of the site there are &lt;strong&gt;slide shows&lt;/strong&gt; and &lt;strong&gt;inline pop-ups&lt;/strong&gt; to enhance the users experience. &lt;strong&gt;Javascript&lt;/strong&gt; is also used to provide &lt;strong&gt;compatibility&lt;/strong&gt; with older &lt;strong&gt;Microsoft&lt;/strong&gt; &lt;strong&gt;browsers&lt;/strong&gt; and display the &lt;strong&gt;PNG&lt;/strong&gt; graphics which are &lt;strong&gt;absolutely positioned&lt;/strong&gt; over other elements of the page.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Jul 2008 18:09:36 +0000</pubDate>
+        <link>/e-commerce/tourism/tours/silver-falls-ranch.html#portfolioModal-42</link>
+        <guid isPermaLink="true">/e-commerce/tourism/tours/silver-falls-ranch.html</guid>
+        
+        <category>AJAX</category>
+        
+        <category>API</category>
+        
+        <category>CSS</category>
+        
+        <category>Curl</category>
+        
+        <category>E-commerce</category>
+        
+        <category>HTML</category>
+        
+        <category>Javascript</category>
+        
+        <category>MySql</category>
+        
+        <category>PHP</category>
+        
+        <category>SOAP</category>
+        
+        <category>SSL</category>
+        
+        <category>SVN</category>
+        
+        <category>Shopping Cart</category>
+        
+        <category>Smarty</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>e-commerce</category>
+        
+        <category>tourism</category>
+        
+        <category>tours</category>
+        
+      </item>
+    
+      <item>
+        <title>Tsunami Marketing - III</title>
+        <description>&lt;p&gt;Tsunami Marketing wanted to &lt;strong&gt;redesign&lt;/strong&gt; their website to take advantage of users &lt;strong&gt;larger monitors&lt;/strong&gt; to showcase their &lt;strong&gt;great designs&lt;/strong&gt;. There are lots of &lt;strong&gt;layers&lt;/strong&gt; and &lt;strong&gt;javascript&lt;/strong&gt; used to create a &lt;strong&gt;interactive site&lt;/strong&gt; that encourages users to &lt;strong&gt;view the next page&lt;/strong&gt;. The site features &lt;strong&gt;navigation thumbnails&lt;/strong&gt; that entice the visitor to click on them. An &lt;strong&gt;animated graphic&lt;/strong&gt; is used as a &lt;strong&gt;background layer&lt;/strong&gt; and displayed while the next graphic is &lt;strong&gt;loaded on-demand&lt;/strong&gt; to increase the &lt;strong&gt;speed&lt;/strong&gt; at which the &lt;strong&gt;page loads&lt;/strong&gt;. The pages are &lt;strong&gt;centered&lt;/strong&gt; &lt;strong&gt;vertically&lt;/strong&gt; and &lt;strong&gt;horizontally&lt;/strong&gt; on the page with a &lt;strong&gt;fixed width&lt;/strong&gt; and &lt;strong&gt;height&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A &lt;strong&gt;CMS&lt;/strong&gt; is used on the back-end to allow Tsunami Staff to update the site without having to know &lt;strong&gt;HTML&lt;/strong&gt;. &lt;strong&gt;Images&lt;/strong&gt; are &lt;strong&gt;cropped&lt;/strong&gt; and or &lt;strong&gt;re-sized&lt;/strong&gt; and &lt;strong&gt;thumbnails&lt;/strong&gt; are &lt;strong&gt;created&lt;/strong&gt; using &lt;strong&gt;ImageMagick&lt;/strong&gt; to ensure the sites layout is maintained.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Jun 2008 18:32:24 +0000</pubDate>
+        <link>/advertising/developer/tsunami-marketing-3.html#portfolioModal-58</link>
+        <guid isPermaLink="true">/advertising/developer/tsunami-marketing-3.html</guid>
+        
+        <category>AJAX</category>
+        
+        <category>Animated Gifs</category>
+        
+        <category>Background Patterns</category>
+        
+        <category>CMS</category>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>ImageMagick</category>
+        
+        <category>Javascript</category>
+        
+        <category>MySql</category>
+        
+        <category>PHP</category>
+        
+        <category>SVN</category>
+        
+        <category>Smarty</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>advertising</category>
+        
+        <category>developer</category>
+        
+      </item>
+    
+      <item>
+        <title>Wahooo Seafood Grill &amp; Bar</title>
+        <description>&lt;p&gt;&lt;strong&gt;Wahooo Seafood Grill &amp;amp; Bar&lt;/strong&gt; was a new site for this Kapa’a restaurant. The &lt;strong&gt;navigation&lt;/strong&gt; features a &lt;strong&gt;pull down fly out menu&lt;/strong&gt; using &lt;strong&gt;jQuery&lt;/strong&gt;. All menu items are update via &lt;strong&gt;smarty&lt;/strong&gt; conf files. There is a &lt;strong&gt;CMS&lt;/strong&gt; for adding items to the merchandise section. The merchandise section uses &lt;strong&gt;javascript&lt;/strong&gt; to &lt;strong&gt;populate pull down menus&lt;/strong&gt; based on selections made in &lt;strong&gt;other pull down menus&lt;/strong&gt;. So choosing a color only shows sizes available in that color. A &lt;strong&gt;shopping cart&lt;/strong&gt; is &lt;strong&gt;implemented&lt;/strong&gt; to allow customers to &lt;strong&gt;purchase&lt;/strong&gt; logo wear &lt;strong&gt;online&lt;/strong&gt;. Checkout is done via a &lt;strong&gt;secure server&lt;/strong&gt; and &lt;strong&gt;PayPal’s Website Payments Pro&lt;/strong&gt; is used for the &lt;strong&gt;credit card processing&lt;/strong&gt;. &lt;strong&gt;Express checkout&lt;/strong&gt; is also implemented to allow &lt;strong&gt;PayPal&lt;/strong&gt; clients to checkout as well.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 12 Dec 2007 19:15:57 +0000</pubDate>
+        <link>/e-commerce/restaurants/wahooo-seafood-grill-bar.html#portfolioModal-46</link>
+        <guid isPermaLink="true">/e-commerce/restaurants/wahooo-seafood-grill-bar.html</guid>
+        
+        <category>AJAX</category>
+        
+        <category>CSS</category>
+        
+        <category>E-commerce</category>
+        
+        <category>HTML</category>
+        
+        <category>PHP</category>
+        
+        <category>PayPal</category>
+        
+        <category>SVN</category>
+        
+        <category>Smarty</category>
+        
+        <category>Website Payments Pro</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>e-commerce</category>
+        
+        <category>restaurants</category>
+        
+      </item>
+    
+      <item>
+        <title>Kawaikini New Century Public Charter School</title>
+        <description>&lt;p&gt;This site uses a &lt;strong&gt;CMS&lt;/strong&gt; based on &lt;strong&gt;smarty&lt;/strong&gt; conf files. The &lt;strong&gt;site editor&lt;/strong&gt; can log in via &lt;strong&gt;ch-rooted ftp&lt;/strong&gt; and &lt;strong&gt;edit&lt;/strong&gt; the conf &lt;strong&gt;files&lt;/strong&gt; that create the site. Each page has a Hawaiian version and an English version. &lt;strong&gt;SIFR&lt;/strong&gt; is used for the headline of each page and allows for changes to be made in the conf files as English and Hawaiian text.The page displays a &lt;strong&gt;flash image&lt;/strong&gt; of the text in a font that isn’t a &lt;strong&gt;web font&lt;/strong&gt;. A &lt;strong&gt;jQuery plugin&lt;/strong&gt; is used to add shadows to images uploaded by the &lt;strong&gt;site editor&lt;/strong&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 12 Dec 2007 00:41:22 +0000</pubDate>
+        <link>/education/kawaikini-new-century-public-charter-school.html#portfolioModal-63</link>
+        <guid isPermaLink="true">/education/kawaikini-new-century-public-charter-school.html</guid>
+        
+        <category>AJAX</category>
+        
+        <category>CMS</category>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>Javascript</category>
+        
+        <category>PHP</category>
+        
+        <category>SIFR</category>
+        
+        <category>Smarty</category>
+        
+        
+        <category>education</category>
+        
+      </item>
+    
+      <item>
+        <title>Island Truss</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;http://www.islandtruss.com/&quot;&gt;Island Truss&lt;/a&gt; website’s designer wanted to use a stencil style &lt;strong&gt;font&lt;/strong&gt; which is unavailable to most users. The site &lt;strong&gt;content&lt;/strong&gt; is &lt;strong&gt;dynamic&lt;/strong&gt; and &lt;strong&gt;editable&lt;/strong&gt; through a custom &lt;strong&gt;CMS&lt;/strong&gt;. Creating graphics for all the text elements using the stencil font was not practical. Enter &lt;a href=&quot;http://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement&quot;&gt;sIFR&lt;/a&gt;, &lt;strong&gt;sIFR&lt;/strong&gt; is a technique that replaces text elements on a page with &lt;strong&gt;flash graphics&lt;/strong&gt; set with the specified font and size. Thanks to a &lt;strong&gt;jQuery&lt;/strong&gt; plugin, &lt;strong&gt;sIFR&lt;/strong&gt; was easy to implement. The site also features a &lt;strong&gt;tab navigation system&lt;/strong&gt; that loads section pages. There are &lt;strong&gt;gallery pages&lt;/strong&gt; to showcase their truss designs and projects. The gallery images display an &lt;strong&gt;inline popup window&lt;/strong&gt; when they are &lt;strong&gt;rolled over&lt;/strong&gt;. Like all of our contact forms I use a &lt;strong&gt;spam prevention filter&lt;/strong&gt; that doesn’t require the user to prove they are human (&lt;strong&gt;captcha&lt;/strong&gt;).&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Nov 2007 00:12:58 +0000</pubDate>
+        <link>/construction/island-truss.html#portfolioModal-44</link>
+        <guid isPermaLink="true">/construction/island-truss.html</guid>
+        
+        <category>AJAX</category>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>PHP</category>
+        
+        <category>SIFR</category>
+        
+        <category>SVN</category>
+        
+        <category>Smarty</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>construction</category>
+        
+      </item>
+    
+      <item>
+        <title>Poipu Beach Resort Association - II</title>
+        <description>&lt;p&gt;This &lt;a href=&quot;http://www.poipubeach.org/&quot;&gt;Poipu Beach Resort Association&lt;/a&gt; website was a &lt;strong&gt;redesign&lt;/strong&gt; of their site built in 1999. The site was built to take advantage of the &lt;strong&gt;larger&lt;/strong&gt; &lt;strong&gt;monitors&lt;/strong&gt; and &lt;strong&gt;resolutions&lt;/strong&gt; enjoyed by web surfers today. The custom &lt;strong&gt;CMS&lt;/strong&gt; was updated to allow the site editor to place &lt;strong&gt;teaser widgets&lt;/strong&gt; on specific pages. There is also a &lt;strong&gt;weather widget&lt;/strong&gt; which displays the current conditions and a &lt;strong&gt;search widget&lt;/strong&gt;. &lt;strong&gt;jQuery&lt;/strong&gt; is used for the &lt;strong&gt;pull down navigation&lt;/strong&gt; and &lt;strong&gt;inline popup windows&lt;/strong&gt;. There is a map section that uses &lt;strong&gt;goggle maps&lt;/strong&gt; and a &lt;strong&gt;pull down menu&lt;/strong&gt; to show you where members and places of interest are located. Member listings also feature a link to the &lt;strong&gt;dynamic map&lt;/strong&gt; section. The &lt;strong&gt;contact form&lt;/strong&gt; uses a &lt;strong&gt;filter&lt;/strong&gt; to &lt;strong&gt;prevent robots&lt;/strong&gt; from using the form to send &lt;strong&gt;spam&lt;/strong&gt;. The filter eliminates the need for users to fill in &lt;strong&gt;captcha’s&lt;/strong&gt;.** **&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Aug 2007 17:19:40 +0000</pubDate>
+        <link>/associations/tourism/visitor%20industry/poipu-beach-resort-association-2.html#portfolioModal-127</link>
+        <guid isPermaLink="true">/associations/tourism/visitor%20industry/poipu-beach-resort-association-2.html</guid>
+        
+        <category>CMS</category>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>Javascript</category>
+        
+        <category>MySql</category>
+        
+        <category>PHP</category>
+        
+        <category>SVN</category>
+        
+        <category>Smarty</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>associations</category>
+        
+        <category>tourism</category>
+        
+        <category>visitor industry</category>
+        
+      </item>
+    
+  </channel>
+</rss>
