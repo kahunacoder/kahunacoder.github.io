@@ -1,5 +1,6 @@
 ---
 author: admin
+liveurl: http://www.aroundhawaii.com/
 comments: true
 status: publish
 date: 2007-06-11 17:18:29+00:00

@@ -1,5 +1,7 @@
 ---
 author: admin
+liveurl: http://www.smithskauai.com/
+status: publish
 comments: false
 date: 2005-12-23 19:11:08+00:00
 layout: default

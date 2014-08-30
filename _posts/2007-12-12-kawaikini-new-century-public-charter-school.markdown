@@ -1,5 +1,6 @@
 ---
 author: admin
+liveurl: http://kawaikini.com/
 status: publish
 comments: true
 date: 2007-12-12 00:41:22+00:00

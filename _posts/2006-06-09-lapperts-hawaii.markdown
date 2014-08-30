@@ -1,5 +1,7 @@
 ---
 author: admin
+liveurl: http://www.lappertshawaii.com/
+status: publish
 comments: false
 date: 2006-06-09 18:14:21+00:00
 layout: default

@@ -1,5 +1,6 @@
 ---
 author: admin
+liveurl: http://www.airventureshawaii.com
 status: publish
 comments: false
 date: 2008-12-16 18:59:46+00:00

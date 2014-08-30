@@ -1,5 +1,6 @@
 ---
 author: admin
+liveurl: http://www.silverfallsranch.com/
 status: publish
 comments: true
 date: 2008-07-17 18:09:36+00:00

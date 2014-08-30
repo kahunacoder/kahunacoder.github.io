@@ -14,14 +14,20 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
+                            {% if post.liveurl != null %}
+                            <<a href="{{ post.liveurl }}" target="_blank">
                             <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered img-post" alt="{{ post.alt }}">
+                            </a>
+                            {% else %}
+                            <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered img-post" alt="{{ post.alt }}">
+                            {% endif %}
                             <p>{{ post.content }}</p>
                             <ul class="list-inline item-details">
                                 <li>Technology:
                                     <strong>{% for tags in post.tags %}{{ tags }}, {% endfor %}</strong>
                                 </li>
                                 <li>Date:
-                                    <strong>{{ post.date }}</strong>
+                                    <strong>{{ post.date | date: "%B, %Y" }}</strong>
                                 </li>
                                 <li>Categories:
                                     <strong>{% for categories in post.categories %}{{ categories }}, {% endfor %}</strong>
