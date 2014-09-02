@@ -12,11 +12,13 @@
                     <div class="col-sm-4 portfolio-item">
                         <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.modal-id }}{% endif %}
 " class="portfolio-link" data-toggle="modal">
-                            {% if post.status == 'publish' %}<div class="caption">
+                            {% if post.status == 'publish' %}
+                            <div class="caption">
                                 <div class="caption-content">
                                     <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
-                            </div>{% endif %}
+                            </div>
+                            {% endif %}
                             <img src="/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
                         </a>
                     </div>

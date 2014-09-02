@@ -15,8 +15,8 @@
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
                             {% if post.liveurl != null %}
-                            <<a href="{{ post.liveurl }}" target="_blank">
-                            <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered img-post" alt="{{ post.alt }}">
+                            <a href="{{ post.liveurl }}" target="_blank" class="modal-link">
+                                <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered img-post" alt="{{ post.alt }}">
                             </a>
                             {% else %}
                             <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered img-post" alt="{{ post.alt }}">
