@@ -459,6 +459,13 @@ section.success, .intro-text {
     border-color: #174B24;
     color: #ffffff;
 }
+blockquote {
+    border: none;
+}
+#cloud a{
+    color:#{{ site.color.secondary-dark }};
+}
+
 @media(min-width:768px) {
     .img-post{
         height:100%;

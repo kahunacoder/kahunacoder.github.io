@@ -30,7 +30,7 @@ module Jekyll
                     self.convert(from, to)
 
                     # Each time a PNG file is generated, optimize it.
-                    self.optim(to)
+                    #self.optim(to)
                 end
             end
         end

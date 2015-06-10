@@ -8,12 +8,23 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>In February of 2009 Tsunami Marketing laid me off because of lack of work. I've since started <strong>freelancing</strong> and I'm now offering my extensive web development capabilities to other <strong>creative professionals</strong> and <strong>web site owners</strong>. I am <strong><u>not a designer</u></strong>, I am a <strong><u>web developer</u></strong>.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>If you have a web site you would like to build and have the graphics and architecture for it I can build it for you. If you're an <strong>advertising agency</strong> or a <strong>designer</strong> and you would like to <strong>leverage</strong> your <strong>existing talents</strong> by offering your clients a website that matches their <strong>brand</strong> then you can <strong>outsource</strong> the web development to me.</p>
-                </div>
+                <div class="col-lg-8 col-lg-offset-2" id="about-content"></div>
             </div>
         </div>
     </section>
+
+<script>    
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=10';
+
+    $('#about-content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B",
+      callback: function (error, options, response) {
+          //console.log(response);
+          $('#about-content').html(markdown.toHTML( response.rows[1].cells.Message ));
+      }
+    });
+    });
+</script>

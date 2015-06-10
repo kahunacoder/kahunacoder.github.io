@@ -24,10 +24,17 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 2710 Hoonani Rd
+  - line: 2505 Kipuka St
+  
   - line: Koloa, HI 96756
 
 # Build settings
 markdown: kramdown
 #permalink: pretty
 permalink: /:categories/:title.html
+
+tag_page_layout: tag_page
+tag_page_dir: technology
+
+category_dir : industry
+category_title_prefix: 'Industry: '

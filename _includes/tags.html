@@ -1,0 +1,73 @@
+ <!-- Technology Section -->
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                	<div class="intro-text">
+	                    <span class="name">{{ page.tag }}</span>
+	                    <hr class="star-light">
+	                    <div id="tag_info" class="skills text-justify"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ <!-- Projects Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects Using {{ page.tag }}</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+					{% for post in page.posts random %}
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.modal-id }}{% endif %}
+" class="portfolio-link" data-toggle="modal">
+                            {% if post.status == 'publish' %}
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            {% endif %}
+                            <img src="/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        </a>
+                    </div>
+					{% endfor %}
+        </div>
+    </section>
+
+{% raw %}
+  <script id="tag-template" type="text/x-handlebars-template">
+	<blockquote cite="{{ cellsArray.[4] }}">
+		{{ cellsArray.[5] }}
+	</blockquote>
+      <p>I started using {% endraw %}{{ page.tag }}{% raw %} in {{ cellsArray.[1] }}</p>
+      <p>{{ cellsArray.[6] }}</p>
+  </script>
+{% endraw %}
+
+<script>    
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=3';
+
+    // Compile the Handlebars template for HR leaders.
+    var TagTemplate = Handlebars.compile($('#tag-template').html());
+
+    // Load top five HR leaders.
+    $('#tag_info').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G where A = '{{ page.tag }}' order by A desc",
+      rowTemplate: TagTemplate,
+      callback: function (error, options, response) {
+          //console.log(error, options, response);
+      }
+    });
+    });
+</script>
