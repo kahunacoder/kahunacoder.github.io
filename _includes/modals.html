@@ -1,0 +1,49 @@
+ <!-- Portfolio Modals -->
+ {% for post in site.posts %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ post.title }}</h2>
+                            <hr class="star-primary">
+                            {% if post.liveurl != null %}
+                            <a href="{{ post.liveurl }}" target="_blank" class="modal-link">
+                                <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered img-post" alt="{{ post.alt }}">
+                            </a>
+                            {% else %}
+                            <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered img-post" alt="{{ post.alt }}">
+                            {% endif %}
+                            <div class="text-justify">{{ post.content }}</div>
+                            <ul class="list-inline item-details">
+                                <li>Technologies:
+                                    {% for tag in post.tags %}
+                                    <a href="/technology/{{ tag | slugize }}.html" ><strong>{{ tag}}</strong></a>, 
+                                    {% endfor %}
+                                
+                                </li>
+                                <li>Date:
+                                    <strong>{{ post.date | date: "%B, %Y" }}</strong>
+                                </li>
+                                <li>Industries:
+                                    {% for categories in post.categories %}
+                                    <a href="/industry/{{ categories | slugize }}/" ><strong>{{ categories}}</strong></a>, 
+                                    {% endfor %}
+
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

@@ -1,0 +1,29 @@
+---
+author: admin
+status: publish
+comments: false
+date: 2006-10-31 19:26:21+00:00
+layout: default
+slug: ingage
+title: Ingage
+modal-id: 53
+img: ing.jpg
+alt: Ingage
+categories:
+- Education
+- E-Commerce
+tags:
+- CMS
+- CSS
+- E-commerce
+- HTML
+- Javascript
+- MySql
+- PayPal
+- PayPal IPN
+- PHP
+- SVN
+---
+Ingage is one of the most complicated sites I've ever built. It's a **member site** where members can be either a protege or a mentor or both. The Ingage Zone section of the site is where all the magic happens. Mentors and proteges interact with each other using a **series of forms** to **schedule assignments**, **track time usage**, **upload materials**, **update their profiles** and **manage their accounts**.
+
+The **e-commerce** section of the site allows proteges to **purchase** courses via a custom **PayPal integration** that uses **PayPal IPN** to provide instant access. Unfortunately the e-commerce section is currently broken after a server move.
