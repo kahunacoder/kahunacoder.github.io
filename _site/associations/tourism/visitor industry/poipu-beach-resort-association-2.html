@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img height="24" src="/img/icon.svg" alt="" style="vertical-align:bottom;"> Kahuna Coder</a>
+                <a class="navbar-brand" href="/"><img height="24" src="/img/icon.svg" alt="" style="vertical-align:bottom; white-space: nowrap;"> Kahuna Coder</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -593,7 +593,7 @@
       query: "select A,B",
       callback: function (error, options, response) {
           //console.log(response);
-          $('#about-content').html(markdown.toHTML( response.rows[1].cells.Message ));
+          $('#about-content').html(marked( response.rows[1].cells.Message ));
       }
     });
     });
@@ -3571,7 +3571,7 @@ A **CMS** is used on the back-end to allow Tsunami Staff to update the site with
     <!-- Google Spreadsheet JavaScript -->
     <script src="/js/sheetrock.min.js"></script>
     <script src="/js/handlebars.min.js"></script>
-    <script src="/js/markdown.min.js"></script>
+    <script src="/js/marked.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>

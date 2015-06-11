@@ -23,7 +23,7 @@
       query: "select A,B",
       callback: function (error, options, response) {
           //console.log(response);
-          $('#about-content').html(markdown.toHTML( response.rows[1].cells.Message ));
+          $('#about-content').html(marked( response.rows[1].cells.Message ));
       }
     });
     });
