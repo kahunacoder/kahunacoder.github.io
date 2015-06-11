@@ -1,0 +1,72 @@
+ <!-- Industries Section -->
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                	<div class="intro-text">
+	                    <span class="name">{{ page.category }}</span>
+	                    <hr class="star-light">
+	                    <div id="cagtegory_info" class="skills text-justify"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ <!-- Projects Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects for the {{ page.category }} industry</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+					{% for post in site.categories[page.category] random %}
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.modal-id }}{% endif %}
+" class="portfolio-link" data-toggle="modal">
+                            {% if post.status == 'publish' %}
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            {% endif %}
+                            <img src="/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        </a>
+                    </div>
+					{% endfor %}
+        </div>
+    </section>
+
+{% raw %}
+  <script id="category-template" type="text/x-handlebars-template">
+ 	<blockquote cite="{{ cellsArray.[3] }}">
+		{{ cellsArray.[2] }}
+	</blockquote>
+     <p>I started building sites for the {% endraw %}{{ page.category }}{% raw %} industry in {{ cellsArray.[1] }}</p>
+  </script>
+{% endraw %}
+
+<script>    
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=4';
+
+    // Compile the Handlebars template for HR leaders.
+    var CategoryTemplate = Handlebars.compile($('#category-template').html());
+
+    // Load top five HR leaders.
+    $('#cagtegory_info').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D where A = '{{ page.category }}' order by A desc",
+      rowTemplate: CategoryTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
