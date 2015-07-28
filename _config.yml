@@ -17,8 +17,9 @@ social:
     url: http://facebook.com/kahunacoder
   - title: linkedin
     url: www.linkedin.com/in/kahunacoder
-  #   url: http://bitbucket.org/kahunacoder
-  # - title: github
+  - title: bitbucket
+    url: http://bitbucket.org/kahunacoder
+  - title: github
     url: http://github.com/kahunacoder
 
 # Postal address (add as many lines as necessary)

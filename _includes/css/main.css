@@ -37,7 +37,7 @@ h6 {
 }
 
 hr.star-light,
-hr.star-primary {
+hr.star-primary, hr.icon-kc-logo-light, hr.icon-kc-logo-primary {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -57,20 +57,38 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
-hr.star-light {
+hr.icon-kc-logo-light:after, hr.icon-kc-logo-primary:after{
+    content: "\e600";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: icomoon;
+    font-size: 2em;
+}
+.icon-gts-green:after{
+    content: "\e601";
+    display: inline-block;
+    font-family: icomoon;
+    font-size: 20em;
+   color: #{{ site.color.secondary-dark }};
+    background-color: #{{ site.color.primary }};
+}
+
+hr.star-light, hr.icon-kc-logo-light  {
     border-color: #{{ site.color.secondary-dark }};
 }
 
-hr.star-light:after {
+hr.star-light:after, hr.icon-kc-logo-light:after  {
     color: #{{ site.color.secondary-dark }};
     background-color: #{{ site.color.primary }};
 }
 
-hr.star-primary {
+hr.star-primary, hr.icon-kc-logo-primary {
     border-color: #{{ site.color.secondary }};
 }
 
-hr.star-primary:after {
+hr.star-primary:after, hr.icon-kc-logo-primary:after {
     color: #{{ site.color.secondary }};
     background-color: #fff;
 }
@@ -94,6 +112,15 @@ header img {
     display: block;
     margin: 0 auto 20px;
 }
+
+.circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(http://link-to-your/image.jpg) no-repeat;
+    }
 
 header .intro-text .name {
     display: block;
