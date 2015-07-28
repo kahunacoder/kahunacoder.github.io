@@ -10,7 +10,6 @@ img: kfc.jpg
 alt: Kauai Film Commission
 categories:
 - Tourism
-- Visitor Industry
 tags:
 - CSS
 - HTML

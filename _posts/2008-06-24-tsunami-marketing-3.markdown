@@ -11,11 +11,10 @@ img: tsu.jpg
 alt: Tsunami Marketing - III
 categories:
 - Advertising
-- Developer
 tags:
 - AJAX
-- Animated Gifs
-- Background Patterns
+- AnimatedGifs
+- BackgroundPatterns
 - CMS
 - CSS
 - HTML

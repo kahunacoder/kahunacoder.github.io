@@ -10,15 +10,14 @@ img: ph-1.jpg
 alt: Aloha From Hawaii - Postcards-Hawaii.com
 categories:
 - Tourism
-- Visitor Industry
 tags:
-- Background Patterns
+- BackgroundPatterns
 - C
 - CGI
 - GCC
 - HTML
 - Javascript
-- Netsite Server Map
+- NetsiteServerMap
 - Perl
 - SSI
 - Tables

@@ -10,9 +10,8 @@ img: pc-afh.jpg
 alt: MediaHi - Postcards-Hawaii.com
 categories:
 - Tourism
-- Visitor Industry
 tags:
-- Background Patterns
+- BackgroundPatterns
 - CMS
 - CSS
 - HTML

@@ -12,7 +12,6 @@ img: kfe.jpg
 alt: Kauai Festivals
 categories:
 - Tourism
-- Visitor Industry
 tags:
 - AJAX
 - CMS
@@ -25,8 +24,7 @@ tags:
 - PHP
 - Smarty
 - SVN
-- Visitor Industry
-- Zend Framework
+- ZendFramework
 ---
 This site features information about festivals on Kauai. This is a complete **update** of their previous site that I built in **2004**. The new site features a **simpler navigation** system and **larger images** to reflect the larger **monitors** and higher **resolutions** that are used by **modern web surfers**.
 

@@ -10,10 +10,10 @@ modal-id: 52
 img: rmx.jpg
 alt: Scott Hollinger RE/MAX of Bigfork
 categories:
-- Real Estate
+- RealEstate
 tags:
 - AJAX
-- Background Patterns
+- BackgroundPatterns
 - CMS
 - CSS
 - HTML

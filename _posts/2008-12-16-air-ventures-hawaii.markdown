@@ -11,8 +11,6 @@ modal-id: 36
 img: air.jpg
 alt: Air Ventures Hawaii
 categories:
-- E-Commerce
-- Tourism
 - Tours
 tags:
 - A3H

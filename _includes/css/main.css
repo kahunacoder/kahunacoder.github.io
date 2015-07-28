@@ -75,6 +75,24 @@ hr.icon-kc-logo-light:after, hr.icon-kc-logo-primary:after{
     background-color: #{{ site.color.primary }};
 }
 
+.icon-kc-logo-nav:after{
+    content: "\e600";
+    display: inline-block;
+    font-family: icomoon;
+    font-size: 1em;
+   color: #ffffff;
+
+}
+
+a .icon-kc-logo-nav:focus{
+     content: "\e600";
+    display: inline-block;
+    font-family: icomoon;
+    font-size: 1em;
+  color: #{{ site.color.primary }};
+}
+
+
 hr.star-light, hr.icon-kc-logo-light  {
     border-color: #{{ site.color.secondary-dark }};
 }
@@ -112,15 +130,6 @@ header img {
     display: block;
     margin: 0 auto 20px;
 }
-
-.circular {
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(http://link-to-your/image.jpg) no-repeat;
-    }
 
 header .intro-text .name {
     display: block;

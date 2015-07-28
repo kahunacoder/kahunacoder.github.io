@@ -11,10 +11,9 @@ img: tsu-client.jpg
 alt: Tsunami Marketing - Client Intranet
 categories:
 - Advertising
-- Developer
 tags:
 - AJAX
-- Background Patterns
+- BackgroundPatterns
 - CMS
 - CSS
 - HTML

@@ -9,8 +9,6 @@ modal-id: 61
 img: saf-1.jpg
 alt: Safari Helicopters
 categories:
-- E-Commerce
-- Tourism
 - Tours
 tags:
 - CGI

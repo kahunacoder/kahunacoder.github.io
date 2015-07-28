@@ -9,7 +9,6 @@ modal-id: 62
 img: hmp.jpg
 alt: Mahaulepu Heritage Trail
 categories:
-- Tourism
 - Tours
 tags:
 - CSS

@@ -11,8 +11,6 @@ modal-id: 42
 img: sfr.jpg
 alt: Silver Falls Ranch
 categories:
-- E-Commerce
-- Tourism
 - Tours
 tags:
 - AJAX
@@ -25,7 +23,7 @@ tags:
 - jQuery
 - MySql
 - PHP
-- Shopping Cart
+- ShoppingCart
 - Smarty
 - SOAP
 - SSL

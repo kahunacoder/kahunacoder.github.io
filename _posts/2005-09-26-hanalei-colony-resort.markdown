@@ -10,8 +10,6 @@ img: hcr.jpg
 alt: Hanalei Colony Resort
 categories:
 - Accommodations
-- Resort
-- Time Share
 tags:
 - CSS
 - HTML

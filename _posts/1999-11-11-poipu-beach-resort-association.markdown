@@ -10,7 +10,6 @@ img: pbr-1.jpg
 alt: Poipu Beach Resort Association
 categories:
 - Tourism
-- Visitor Industry
 tags:
 - AJAX
 - CMS

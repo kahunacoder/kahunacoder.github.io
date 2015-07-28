@@ -12,7 +12,6 @@ img: ywc.jpg
 alt: Camp Sloggett
 categories:
 - Accommodations
-- Camping
 tags:
 - CSS
 - Flash

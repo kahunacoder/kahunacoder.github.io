@@ -11,11 +11,11 @@ alt: Kauai Exotix
 categories:
 - E-Commerce
 tags:
-- Background Patterns
+- BackgroundPatterns
 - CGI
 - E-commerce
 - GCC
 - Javascript
-- Netsite Server Map
+- NetsiteServerMap
 - Perl
 ---

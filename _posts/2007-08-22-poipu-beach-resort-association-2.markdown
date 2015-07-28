@@ -10,9 +10,7 @@ modal-id: 127
 img: pbr.jpg
 alt: Poipu Beach Resort Association - II
 categories:
-- Associations
 - Tourism
-- Visitor Industry
 tags:
 - CMS
 - CSS

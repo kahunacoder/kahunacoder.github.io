@@ -12,19 +12,18 @@ img: mel.jpg
 alt: Mele.com
 categories:
 - E-Commerce
-- Music
 tags:
 - AJAX
 - CMS
 - CSS
 - E-commerce
-- Express Checkout
+- ExpressCheckout
 - HTML
 - Javascript
 - MySql
 - PayPal
 - PHP
-- Shopping Cart
+- ShoppingCart
 - SVN
 ---
 Mele.com

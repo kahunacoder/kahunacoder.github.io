@@ -10,6 +10,5 @@ img: kfe-old.jpg
 alt: Kauai Festivals
 categories:
 - Tourism
-- Visitor Industry
 ---
 Kauai Festivals

@@ -11,13 +11,11 @@ img: cafe.jpg
 alt: Storytelling for the New Millennium Cyber Cafe
 categories:
 - Education
-- Tourism
-- Visitor Industry
 tags:
-- Animated Gifs
-- Background Patterns
+- AnimatedGifs
+- BackgroundPatterns
 - HTML
-- Netsite Server Map
+- NetsiteServerMap
 - Tables
 ---
 Storytelling for the New Millennium Cyber Cafe

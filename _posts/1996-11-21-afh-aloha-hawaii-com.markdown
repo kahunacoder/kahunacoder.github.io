@@ -10,13 +10,12 @@ img: afh-old.jpg
 alt: Aloha From Hawaii  Aloha-Hawaii.com
 categories:
 - Tourism
-- Visitor Industry
 tags:
-- Background Patterns
+- BackgroundPatterns
 - CGI
 - HTML
 - Javascript
-- Netsite Server Map
+- NetsiteServerMap
 - Perl
 - SSI
 - Tables

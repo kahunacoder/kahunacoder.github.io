@@ -10,12 +10,10 @@ modal-id: 34
 img: hhc.jpg
 alt: Holoholo Charters - II
 categories:
-- E-Commerce
-- Tourism
 - Tours
 tags:
 - AJAX
-- Animated Gifs
+- AnimatedGifs
 - CMS
 - CSS
 - Curl

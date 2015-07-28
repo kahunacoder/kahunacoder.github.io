@@ -12,13 +12,12 @@ img: otw.jpg
 alt: Around Hawaii
 categories:
 - Tourism
-- Visitor Industry
 tags:
 - AJAX
-- Background Patterns
+- BackgroundPatterns
 - CMS
 - CSS
-- css sprites
+- CSSsprites
 - HTML
 - ImageMagick
 - Javascript

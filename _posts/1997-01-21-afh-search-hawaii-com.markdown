@@ -10,13 +10,12 @@ img: shw.jpg
 alt: Aloha From Hawaii - Search-Hawaii.com
 categories:
 - Tourism
-- Visitor Industry
 tags:
-- Background Patterns
+- BackgroundPatterns
 - CGI
 - HTML
 - Javascript
-- Netsite Server Map
+- NetsiteServerMap
 - Perl
 - Python
 - SSI

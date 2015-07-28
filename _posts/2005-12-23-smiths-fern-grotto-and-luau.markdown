@@ -12,9 +12,6 @@ img: stp.jpg
 alt: Smiths Fern Grotto and Luau
 categories:
 - E-Commerce
-- Restaurants
-- Tourism
-- Tours
 tags:
 - A3H
 - AJAX

@@ -10,13 +10,12 @@ img: afh.jpg
 alt: MediaHi - Aloha-Hawaii.com
 categories:
 - Tourism
-- Visitor Industry
 tags:
 - CMS
 - CSS
 - Flash
-- Google Ads
-- Google Search
+- GoogleAds
+- GoogleSearch
 - HTML
 - PHP
 ---

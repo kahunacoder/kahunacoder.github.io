@@ -9,9 +9,7 @@ modal-id: 51
 img: rpr.jpg
 alt: Regency Pacific Realty
 categories:
-- Real Estate
-- Time Share
-- Vacation Rentals
+- RealEstate
 tags:
 - CMS
 - CSS

@@ -12,8 +12,6 @@ img: lap.jpg
 alt: Lapperts Hawaii
 categories:
 - E-Commerce
-- Coffee
-- Restaurants
 tags:
 - AJAX
 - CSS

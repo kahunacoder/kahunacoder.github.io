@@ -10,7 +10,6 @@ img: sh-2.jpg
 alt: MediaHi - Search-Hawaii.com
 categories:
 - Tourism
-- Visitor Industry
 tags:
 - Background Patterns
 - CMS

@@ -11,10 +11,9 @@ img: bbb.jpg
 alt: Brennecke's Beach Broiler
 categories:
 - E-Commerce
-- Restaurants
 tags:
 - AJAX
-- Background Patterns
+- BackgroundPatterns
 - CMS
 - CSS
 - E-commerce

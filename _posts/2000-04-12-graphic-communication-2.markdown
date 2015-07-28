@@ -10,6 +10,5 @@ img: gc.jpg
 alt: Graphic Communication  II
 categories:
 - Advertising
-- Developer
 ---
 Graphic Communication - II

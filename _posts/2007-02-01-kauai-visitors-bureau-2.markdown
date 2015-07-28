@@ -11,13 +11,12 @@ img: kvb.jpg
 alt: Kauai Visitors Bureau - II
 categories:
 - Tourism
-- Visitor Industry
 tags:
 - AJAX
-- Background Patterns
+- BackgroundPatterns
 - CMS
 - CSS
-- Google Search
+- GoogleSearch
 - HTML
 - Javascript
 - jQuery

@@ -10,7 +10,6 @@ img: hyt.jpg
 alt: Hyatt Regency Kauai Resort and Spa
 categories:
 - Accommodations
-- Resort
 tags:
 - HTML
 - Javascript

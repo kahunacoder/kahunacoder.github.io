@@ -12,8 +12,6 @@ img: kaw.jpg
 alt: Poipu Bay Golf Course
 categories:
 - Golf
-- Tourism
-- Visitor Industry
 tags:
 - CSS
 - HTML
