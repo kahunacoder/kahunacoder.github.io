@@ -3,7 +3,7 @@ author: admin
 status: publish
 comments: false
 date: 2009-02-13 15:46:51+00:00
-layout: default
+layout: post
 slug: holoholo-charters-2
 title: Holoholo Charters - II
 modal-id: 34
@@ -13,7 +13,6 @@ categories:
 - Tours
 tags:
 - AJAX
-- AnimatedGifs
 - CMS
 - CSS
 - Curl

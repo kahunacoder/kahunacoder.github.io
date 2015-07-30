@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 1998-11-11 19:19:07+00:00
-layout: default
+layout: post
 slug: kauai-film-commission
 title: Kauai Film Commission
 modal-id: 48

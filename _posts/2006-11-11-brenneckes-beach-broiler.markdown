@@ -3,7 +3,7 @@ author: admin
 comments: true
 status: publish
 date: 2006-11-11 19:05:53+00:00
-layout: default
+layout: post
 slug: brenneckes-beach-broiler
 title: Brennecke's Beach Broiler
 modal-id: 39
@@ -13,7 +13,6 @@ categories:
 - E-Commerce
 tags:
 - AJAX
-- BackgroundPatterns
 - CMS
 - CSS
 - E-commerce

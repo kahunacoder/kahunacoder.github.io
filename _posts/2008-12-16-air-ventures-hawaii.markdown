@@ -4,7 +4,7 @@ liveurl: http://www.airventureshawaii.com
 status: publish
 comments: false
 date: 2008-12-16 18:59:46+00:00
-layout: default
+layout: post
 slug: air-ventures-hawaii
 title: Air Ventures Hawaii
 modal-id: 36

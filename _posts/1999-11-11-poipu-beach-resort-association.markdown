@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 1999-11-11 19:28:59+00:00
-layout: default
+layout: post
 slug: poipu-beach-resort-association
 title: Poipu Beach Resort Association
 modal-id: 55

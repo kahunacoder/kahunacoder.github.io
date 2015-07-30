@@ -2,6 +2,7 @@
 title: Kahuna Coder
 email: ghp@kc.gs
 description: "Building web sites since 1995"
+url: "http://www.kahunacoder.com"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -31,10 +32,13 @@ address:
 # Build settings
 markdown: kramdown
 #permalink: pretty
-permalink: /:categories/:title.html
+permalink: /industry/:categories/:title.html
 
 tag_page_layout: tag_page
 tag_page_dir: technology
 
 category_dir : industry
 category_title_prefix: 'Industry: '
+
+gems:
+  - jekyll-sitemap

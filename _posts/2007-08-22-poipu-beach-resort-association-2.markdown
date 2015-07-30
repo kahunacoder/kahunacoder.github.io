@@ -3,7 +3,7 @@ author: admin
 status: publish
 comments: true
 date: 2007-08-22 17:19:40+00:00
-layout: default
+layout: post
 slug: poipu-beach-resort-association-2
 title: Poipu Beach Resort Association - II
 modal-id: 127

@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 1997-01-21 15:12:13+00:00
-layout: default
+layout: post
 slug: afh-search-hawaii-com
 title: Aloha From Hawaii - Search-Hawaii.com
 modal-id: 147
@@ -11,11 +11,10 @@ alt: Aloha From Hawaii - Search-Hawaii.com
 categories:
 - Tourism
 tags:
-- BackgroundPatterns
 - CGI
 - HTML
 - Javascript
-- NetsiteServerMap
+- Netsite Server Map
 - Perl
 - Python
 - SSI

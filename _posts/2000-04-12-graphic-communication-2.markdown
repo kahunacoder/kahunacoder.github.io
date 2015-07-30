@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 2000-04-12 00:37:56+00:00
-layout: default
+layout: post
 slug: graphic-communication-2
 title: Graphic Communication  II
 modal-id: 132

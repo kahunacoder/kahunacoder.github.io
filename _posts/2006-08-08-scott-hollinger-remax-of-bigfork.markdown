@@ -3,17 +3,16 @@ author: admin
 status: publish
 comments: false
 date: 2006-08-08 18:25:01+00:00
-layout: default
+layout: post
 slug: scott-hollinger-remax-of-bigfork
 title: Scott Hollinger RE/MAX of Bigfork
 modal-id: 52
 img: rmx.jpg
 alt: Scott Hollinger RE/MAX of Bigfork
 categories:
-- RealEstate
+- Real Estate
 tags:
 - AJAX
-- BackgroundPatterns
 - CMS
 - CSS
 - HTML

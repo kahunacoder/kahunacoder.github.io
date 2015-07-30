@@ -4,7 +4,7 @@ liveurl: http://www.aroundhawaii.com/
 comments: true
 status: publish
 date: 2007-06-11 17:18:29+00:00
-layout: default
+layout: post
 slug: around-hawaii
 title: Around Hawaii
 modal-id: 126
@@ -14,10 +14,9 @@ categories:
 - Tourism
 tags:
 - AJAX
-- BackgroundPatterns
 - CMS
 - CSS
-- CSSsprites
+- Sprites
 - HTML
 - ImageMagick
 - Javascript

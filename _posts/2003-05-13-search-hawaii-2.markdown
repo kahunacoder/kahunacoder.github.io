@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 2003-05-13 17:02:41+00:00
-layout: default
+layout: post
 slug: search-hawaii-2
 title: MediaHi - Search-Hawaii.com
 modal-id: 116
@@ -11,7 +11,6 @@ alt: MediaHi - Search-Hawaii.com
 categories:
 - Tourism
 tags:
-- Background Patterns
 - CMS
 - CSS
 - HTML

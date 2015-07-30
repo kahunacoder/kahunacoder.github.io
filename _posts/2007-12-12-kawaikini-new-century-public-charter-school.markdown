@@ -4,7 +4,7 @@ liveurl: http://kawaikini.com/
 status: publish
 comments: true
 date: 2007-12-12 00:41:22+00:00
-layout: default
+layout: post
 slug: kawaikini-new-century-public-charter-school
 title: Kawaikini New Century Public Charter School
 modal-id: 63

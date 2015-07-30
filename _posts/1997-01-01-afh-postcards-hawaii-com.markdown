@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 1997-01-01 15:17:34+00:00
-layout: default
+layout: post
 slug: afh-postcards-hawaii-com
 title: Aloha From Hawaii - Postcards-Hawaii.com
 modal-id: 149
@@ -11,13 +11,12 @@ alt: Aloha From Hawaii - Postcards-Hawaii.com
 categories:
 - Tourism
 tags:
-- BackgroundPatterns
 - C
 - CGI
 - GCC
 - HTML
 - Javascript
-- NetsiteServerMap
+- Netsite Server Map
 - Perl
 - SSI
 - Tables

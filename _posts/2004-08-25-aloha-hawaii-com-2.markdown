@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 2004-08-25 18:18:14+00:00
-layout: default
+layout: post
 slug: aloha-hawaii-com-2
 title: MediaHi - Aloha-Hawaii.com
 modal-id: 47
@@ -14,8 +14,8 @@ tags:
 - CMS
 - CSS
 - Flash
-- GoogleAds
-- GoogleSearch
+- Google Ads
+- Google Search
 - HTML
 - PHP
 ---

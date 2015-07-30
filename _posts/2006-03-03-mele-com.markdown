@@ -4,7 +4,7 @@ liveurl: http://mele.com/
 status: publish
 comments: false
 date: 2006-03-03 19:22:06+00:00
-layout: default
+layout: post
 slug: mele-com
 title: Mele.com
 modal-id: 49
@@ -17,13 +17,13 @@ tags:
 - CMS
 - CSS
 - E-commerce
-- ExpressCheckout
+- Express Checkout
 - HTML
 - Javascript
 - MySql
 - PayPal
 - PHP
-- ShoppingCart
+- Shopping Cart
 - SVN
 ---
 Mele.com

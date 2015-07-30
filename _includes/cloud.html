@@ -11,7 +11,7 @@
                 <div class="col-lg-8 col-lg-offset-2" id="category-cloud">
                     <h3>Industries</h3><p>
                     {% for category in site.categories random %}
-                        <a href="/industry/{{ category | first | slugize }}/"  style="font-size: {{ category | last | size | times: 100 | divided_by: site.categories.size  | plus: 70}}%">
+                        <a href="/industry/{{ category | first | slugify }}/"  style="font-size: {{ category | last | size | times: 100 | divided_by: site.categories.size  | plus: 70}}%">
                             {{ category | first }}
                         </a>
                     {% endfor %}</p>
@@ -22,7 +22,7 @@
                 <div class="col-lg-8 col-lg-offset-2" id="tag-cloud">
                     <h3>Technology</h3><p>
                     {% for tag in site.tags random %}
-                        <a href="/technology/{{ tag | first | slugize }}.html"  style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size  | plus: 70}}%">
+                        <a href="/technology/{{ tag | first | slugify }}.html"  style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size  | plus: 70}}%">
                             {{ tag | first }}
                         </a>
                     {% endfor %}</p>

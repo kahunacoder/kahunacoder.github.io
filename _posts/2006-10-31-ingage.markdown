@@ -3,7 +3,7 @@ author: admin
 status: publish
 comments: false
 date: 2006-10-31 19:26:21+00:00
-layout: default
+layout: post
 slug: ingage
 title: Ingage
 modal-id: 53
@@ -19,7 +19,7 @@ tags:
 - Javascript
 - MySql
 - PayPal
-- PayPalIPN
+- PayPal IPN
 - PHP
 - SVN
 ---

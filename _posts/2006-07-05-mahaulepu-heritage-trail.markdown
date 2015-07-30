@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 2006-07-05 18:39:40+00:00
-layout: default
+layout: post
 slug: mahaulepu-heritage-trail
 title: Mahaulepu Heritage Trail
 modal-id: 62

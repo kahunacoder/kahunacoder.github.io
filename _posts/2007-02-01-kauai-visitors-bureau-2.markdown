@@ -3,7 +3,7 @@ author: admin
 comments: true
 status: publish
 date: 2007-02-01 19:03:04+00:00
-layout: default
+layout: post
 slug: kauai-visitors-bureau-2
 title: Kauai Visitors Bureau - II
 modal-id: 38
@@ -13,10 +13,9 @@ categories:
 - Tourism
 tags:
 - AJAX
-- BackgroundPatterns
 - CMS
 - CSS
-- GoogleSearch
+- Google Search
 - HTML
 - Javascript
 - jQuery

@@ -3,7 +3,7 @@ author: admin
 status: publish
 comments: false
 date: 1996-04-25 13:31:19+00:00
-layout: default
+layout: post
 slug: storytelling-for-the-new-millennium-cyber-cafe
 title: Storytelling for the New Millennium Cyber Cafe
 modal-id: 141
@@ -12,10 +12,8 @@ alt: Storytelling for the New Millennium Cyber Cafe
 categories:
 - Education
 tags:
-- AnimatedGifs
-- BackgroundPatterns
 - HTML
-- NetsiteServerMap
+- Netsite Server Map
 - Tables
 ---
 Storytelling for the New Millennium Cyber Cafe

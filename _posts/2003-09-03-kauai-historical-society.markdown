@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 2003-09-03 18:42:16+00:00
-layout: default
+layout: post
 slug: kauai-historical-society
 title: Kauai Historical Society
 modal-id: 64

@@ -2,7 +2,7 @@
 author: admin
 comments: false
 date: 1996-11-11 19:38:22+00:00
-layout: default
+layout: post
 slug: safari-helicopters
 title: Safari Helicopters
 modal-id: 61

@@ -3,7 +3,7 @@ author: admin
 status: publish
 comments: true
 date: 2007-11-10 00:12:58+00:00
-layout: default
+layout: post
 slug: island-truss
 title: Island Truss
 modal-id: 44

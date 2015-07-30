@@ -4,7 +4,7 @@ liveurl: http://www.silverfallsranch.com/
 status: publish
 comments: true
 date: 2008-07-17 18:09:36+00:00
-layout: default
+layout: post
 slug: silver-falls-ranch
 title: Silver Falls Ranch
 modal-id: 42
@@ -23,7 +23,7 @@ tags:
 - jQuery
 - MySql
 - PHP
-- ShoppingCart
+- Shopping Cart
 - Smarty
 - SOAP
 - SSL

@@ -4,7 +4,7 @@ liveurl: http://www.kauaifestivals.com
 status: publish
 comments: false
 date: 2009-11-23 14:58:48+00:00
-layout: default
+layout: post
 slug: kauai-festivals
 title: Kauai Festivals
 modal-id: 31
@@ -24,7 +24,7 @@ tags:
 - PHP
 - Smarty
 - SVN
-- ZendFramework
+- Zend Framework
 ---
 This site features information about festivals on Kauai. This is a complete **update** of their previous site that I built in **2004**. The new site features a **simpler navigation** system and **larger images** to reflect the larger **monitors** and higher **resolutions** that are used by **modern web surfers**.
 

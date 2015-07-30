@@ -3,7 +3,7 @@ author: admin
 status: publish
 comments: false
 date: 2006-10-11 17:16:15+00:00
-layout: default
+layout: post
 slug: tsunami-marketing-client-intranet
 title: Tsunami Marketing - Client Intranet
 modal-id: 124
@@ -13,7 +13,6 @@ categories:
 - Advertising
 tags:
 - AJAX
-- BackgroundPatterns
 - CMS
 - CSS
 - HTML
