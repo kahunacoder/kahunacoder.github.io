@@ -22,7 +22,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.icon-me_with_hat:before {
+  content: "\e900";
+}
 .icon-gts:before {
 	content: "\e601";
 }
