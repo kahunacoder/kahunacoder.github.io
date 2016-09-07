@@ -25,6 +25,24 @@ a.active {
     color: #{{ site.color.primary }};
 }
 
+#intro-content a,
+#intro-content a:hover,
+#intro-content a:focus,
+#intro-content a:active,
+#intro-content a.active {
+    outline: 0;
+    color: #{{ site.color.secondary-dark }};
+}
+
+.btn-resume{
+    color:#ffffff !important;
+}
+
+.btn-secondary-dark{
+    color:#ffffff !important;
+    background-color: #{{ site.color.secondary-dark }};
+}
+
 h1,
 h2,
 h3,
@@ -65,6 +83,17 @@ hr.icon-kc-logo-light:after, hr.icon-kc-logo-primary:after{
     padding: 0 .25em;
     font-family: icomoon;
     font-size: 2em;
+}
+.icon-me_with_hat-green:before{
+    border-radius:50%; // i use percentage  u can use pix.
+}
+.icon-me_with_hat-green:after{
+    content: "\e900";
+    display: inline-block;
+    font-family: icomoon;
+    font-size: 20em;
+   color: #{{ site.color.secondary-dark }};
+    background-color: #{{ site.color.primary }};
 }
 .icon-gts-green:after{
     content: "\e601";
@@ -129,6 +158,11 @@ header .container {
 header img {
     display: block;
     margin: 0 auto 20px;
+}
+header .intro-text  div{
+    font-size: 1.25em;
+    font-weight: 300;
+    text-align:justify;
 }
 
 header .intro-text .name {

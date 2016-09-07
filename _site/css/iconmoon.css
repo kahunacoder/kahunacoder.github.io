@@ -1,12 +1,12 @@
 @font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?v0mcg7');
-	src:url('fonts/icomoon.eot?#iefixv0mcg7') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?v0mcg7') format('truetype'),
-		url('fonts/icomoon.woff?v0mcg7') format('woff'),
-		url('fonts/icomoon.svg?v0mcg7#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?5jh41y');
+  src:  url('fonts/icomoon.eot?5jh41y#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5jh41y') format('truetype'),
+    url('fonts/icomoon.woff?5jh41y') format('woff'),
+    url('fonts/icomoon.svg?5jh41y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -22,6 +22,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 .icon-me_with_hat:before {
   content: "\e900";
 }
