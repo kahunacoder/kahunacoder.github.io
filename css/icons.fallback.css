@@ -1,0 +1,500 @@
+.tech {
+	width:16px !important;
+	height:16px !important;
+	box-sizing: border-box;
+}
+
+.tech-icon-android-icon {
+	background-image: url('png/android-icon.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-angular-icon {
+	background-image: url('png/angular-icon.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-ansible {
+	background-image: url('png/ansible.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-apache {
+	background-image: url('png/apache.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-apple {
+	background-image: url('png/apple.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-babel {
+	background-image: url('png/babel.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-bash {
+	background-image: url('png/bash.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-bitbucket {
+	background-image: url('png/bitbucket.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-bootstrap {
+	background-image: url('png/bootstrap.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-browserify-icon {
+	background-image: url('png/browserify-icon.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-c {
+	background-image: url('png/c.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-c++ {
+	background-image: url('png/c++.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-cakephp {
+	background-image: url('png/cakephp.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-chef {
+	background-image: url('png/chef.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-chrome {
+	background-image: url('png/chrome.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-cms {
+	background-image: url('png/cms.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-codeigniter {
+	background-image: url('png/codeigniter.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-coffeescript {
+	background-image: url('png/coffeescript.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-compass {
+	background-image: url('png/compass.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-component {
+	background-image: url('png/component.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-composer {
+	background-image: url('png/composer.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-cordova {
+	background-image: url('png/cordova.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-css-3 {
+	background-image: url('png/css-3.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-django {
+	background-image: url('png/django.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-docker {
+	background-image: url('png/docker.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-dotnet {
+	background-image: url('png/dotnet.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-drupal {
+	background-image: url('png/drupal.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-dyndns {
+	background-image: url('png/dyndns.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-facebook {
+	background-image: url('png/facebook.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-firefox {
+	background-image: url('png/firefox.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-ghost {
+	background-image: url('png/ghost.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-git-icon {
+	background-image: url('png/git-icon.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-git {
+	background-image: url('png/git.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-github-icon {
+	background-image: url('png/github-icon.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-github-octocat {
+	background-image: url('png/github-octocat.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-gitlab {
+	background-image: url('png/gitlab.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-google-analytics {
+	background-image: url('png/google-analytics.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-grunt {
+	background-image: url('png/grunt.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-gulp {
+	background-image: url('png/gulp.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-handlebars {
+	background-image: url('png/handlebars.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-html-5 {
+	background-image: url('png/html-5.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-imagemin {
+	background-image: url('png/imagemin.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-internetexplorer {
+	background-image: url('png/internetexplorer.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-ios {
+	background-image: url('png/ios.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-javascript {
+	background-image: url('png/javascript.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-jekyll {
+	background-image: url('png/jekyll.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-joomla {
+	background-image: url('png/joomla.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-jquery-mobile {
+	background-image: url('png/jquery-mobile.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-jquery {
+	background-image: url('png/jquery.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-json {
+	background-image: url('png/json.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-laravel {
+	background-image: url('png/laravel.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-less {
+	background-image: url('png/less.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-linkedin {
+	background-image: url('png/linkedin.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-macosx {
+	background-image: url('png/macosx.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-magento {
+	background-image: url('png/magento.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-mailchimp-freddie {
+	background-image: url('png/mailchimp-freddie.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-mailgun {
+	background-image: url('png/mailgun.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-mandrill {
+	background-image: url('png/mandrill.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-markdown {
+	background-image: url('png/markdown.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-modernizr {
+	background-image: url('png/modernizr.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-mootools {
+	background-image: url('png/mootools.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-mysql {
+	background-image: url('png/mysql.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-netbeans {
+	background-image: url('png/netbeans.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-nginx {
+	background-image: url('png/nginx.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-nodejs-icon {
+	background-image: url('png/nodejs-icon.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-npm-2 {
+	background-image: url('png/npm-2.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-oauth {
+	background-image: url('png/oauth.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-opera {
+	background-image: url('png/opera.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-paypal {
+	background-image: url('png/paypal.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-perl {
+	background-image: url('png/perl.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-phonegap {
+	background-image: url('png/phonegap.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-php {
+	background-image: url('png/php.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-picasa {
+	background-image: url('png/picasa.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-python {
+	background-image: url('png/python.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-rackspace {
+	background-image: url('png/rackspace.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-redhat {
+	background-image: url('png/redhat.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-ruby {
+	background-image: url('png/ruby.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-rubygems {
+	background-image: url('png/rubygems.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-safari {
+	background-image: url('png/safari.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-sass {
+	background-image: url('png/sass.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-sitepoint {
+	background-image: url('png/sitepoint.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-skype {
+	background-image: url('png/skype.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-slack {
+	background-image: url('png/slack.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-sqlite {
+	background-image: url('png/sqlite.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-stackoverflow {
+	background-image: url('png/stackoverflow.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-stylus {
+	background-image: url('png/stylus.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-subversion {
+	background-image: url('png/subversion.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-symfony {
+	background-image: url('png/symfony.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-terminal {
+	background-image: url('png/terminal.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-tux {
+	background-image: url('png/tux.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-ubuntu {
+	background-image: url('png/ubuntu.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-vagrant {
+	background-image: url('png/vagrant.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-w3c {
+	background-image: url('png/w3c.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-wordpress-icon {
+	background-image: url('png/wordpress-icon.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-wordpress {
+	background-image: url('png/wordpress.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-yahoo {
+	background-image: url('png/yahoo.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-yeoman {
+	background-image: url('png/yeoman.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-youtube {
+	background-image: url('png/youtube.png');
+	background-repeat: no-repeat;
+}
+
+.tech-icon-zend-framework {
+	background-image: url('png/zend-framework.png');
+	background-repeat: no-repeat;
+}

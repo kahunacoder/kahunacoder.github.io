@@ -62,7 +62,7 @@
                         <a href="#portfolio">Projects</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#about">About Code</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -79,23 +79,49 @@
 
 
     
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- <img class="img-responsive" src="/img/gts.svg" alt=""> -->
-                    <div class="icon-gts-green"></div>
-                    <div class="intro-text">
-                        <span class="name">Kahuna Coder</span>
-                        <hr class="icon-kc-logo-light">
-                        <span class="skills">Full Stack Web Developer</span>
-                    </div>
-                </div>
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8  col-sm-offset-2">
+                <!-- <img class="img-responsive" src="/img/gts.svg" alt=""> -->
+                <i class="icon-me_with_hat-green"></i>
+                <div class="intro-text">
+                    <span class="name">Gary Smith</span>
+                    <span class="skills mytitle">Full Stack Web Developer</span>
+                    <hr class="icon-kc-logo-light">
+               </div>
             </div>
         </div>
-    </header>
+        <div class="row">
+            <div class="col-sm-8  col-sm-offset-2 intro-text">
+                <div id="intro-content"></div>
+            </div>
+        </div>
+        <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4">View my Resume</a>
+    </div>
+</div>
 
+    </div>
+</header>
+
+<script>    
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=9';
+
+    $('#intro-content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B",
+      callback: function (error, options, response) {
+          //console.log(response);
+          $('#intro-content').html(marked( response.rows[1].cells.Message ));
+      }
+    });
+    });
+</script>
     
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
@@ -568,6 +594,12 @@
                     </div>
                 
             </div>
+            <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4">View my Resume</a>
+    </div>
+</div>
+
         </div>
     </section>
      <!-- About Section -->
@@ -575,13 +607,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>About Code</h2>
                     <hr class="icon-kc-logo-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2" id="about-content"></div>
             </div>
+            <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4">View my Resume</a>
+    </div>
+</div>
+
         </div>
     </section>
 
@@ -656,6 +694,12 @@
                     </form>
                 </div>
             </div>
+            <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4">View my Resume</a>
+    </div>
+</div>
+
         </div>
     </section>
      <!-- Cloud Section -->
@@ -672,43 +716,43 @@
                     <h3>Industries</h3><p>
                     
                         <a href="/industry/e-commerce/"  style="font-size: 140%">
-                            e-commerce
+                            E-Commerce
                         </a>
                     
                         <a href="/industry/education/"  style="font-size: 110%">
-                            education
+                            Education
                         </a>
                     
                         <a href="/industry/tours/"  style="font-size: 120%">
-                            tours
+                            Tours
                         </a>
                     
                         <a href="/industry/tourism/"  style="font-size: 200%">
-                            tourism
+                            Tourism
                         </a>
                     
                         <a href="/industry/accommodations/"  style="font-size: 100%">
-                            accommodations
+                            Accommodations
                         </a>
                     
                         <a href="/industry/advertising/"  style="font-size: 100%">
-                            advertising
+                            Advertising
                         </a>
                     
                         <a href="/industry/real-estate/"  style="font-size: 90%">
-                            real estate
+                            Real Estate
                         </a>
                     
                         <a href="/industry/construction/"  style="font-size: 90%">
-                            construction
+                            Construction
                         </a>
                     
                         <a href="/industry/golf/"  style="font-size: 80%">
-                            golf
+                            Golf
                         </a>
                     
                         <a href="/industry/developer/"  style="font-size: 80%">
-                            developer
+                            Developer
                         </a>
                     </p>
 
@@ -897,6 +941,12 @@
 
                 </div>
             </div>
+            <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4">View my Resume</a>
+    </div>
+</div>
+
         </div>
     </section>
 
@@ -909,9 +959,7 @@
                         <h3>Location</h3>
                         <p>
                             
-                                2505 Kipuka St <br>
-		                    
-                                Koloa, HI 96756 <br>
+                                Cocoa, FL 32926 <br>
 		                    
                         </p>
                     </div>
@@ -920,30 +968,33 @@
                         <ul class="list-inline">
                             
                             <li>
-                                <a href="http://twitter.com/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
 		                    
                             <li>
-                                <a href="http://facebook.com/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://facebook.com/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
 		                    
                             <li>
-                                <a href="www.linkedin.com/in/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
 		                    
                             <li>
-                                <a href="http://bitbucket.org/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-bitbucket"></i></a>
+                                <a href="https://bitbucket.org/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-bitbucket"></i></a>
                             </li>
 		                    
                             <li>
-                                <a href="http://github.com/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://github.com/kahunacoder" target="social" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                             </li>
 		                    
                         </ul>
+                        <a role="button" class="btn btn-secondary-dark btn-sm" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4">View my Resume</a>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Credits</h3>
-                        <p>This site is meant to showcase projects that Gary Smith (kahunacoder) has worked on. View and download <a target="resume" href="https://docs.google.com/document/d/1GCigF2vNoX6sbGeT4Tewy1DdX8l11Kdwo0yC3W8cCIQ">my resume</a>.</p>
+                        <p>
+                            This site is meant to showcase projects that Gary Smith (kahunacoder) has worked on. 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -952,7 +1003,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Kahuna Coder 2015
+                        Copyright &copy; Kahuna Coder 2016
                     </div>
                 </div>
             </div>
@@ -1027,7 +1078,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -1083,7 +1134,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/developer/" ><strong>developer</strong></a>, 
+                                    <a href="/industry/developer/" ><strong>Developer</strong></a>, 
                                     
 
                                 </li>
@@ -1163,7 +1214,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
                                     
 
                                 </li>
@@ -1229,7 +1280,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
                                     
 
                                 </li>
@@ -1305,7 +1356,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
                                     
 
                                 </li>
@@ -1371,7 +1422,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/advertising/" ><strong>advertising</strong></a>, 
+                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a>, 
                                     
 
                                 </li>
@@ -1433,7 +1484,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>e-commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
                                     
 
                                 </li>
@@ -1493,7 +1544,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/education/" ><strong>education</strong></a>, 
+                                    <a href="/industry/education/" ><strong>Education</strong></a>, 
                                     
 
                                 </li>
@@ -1551,7 +1602,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/construction/" ><strong>construction</strong></a>, 
+                                    <a href="/industry/construction/" ><strong>Construction</strong></a>, 
                                     
 
                                 </li>
@@ -1611,7 +1662,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -1679,7 +1730,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -1749,7 +1800,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -1815,7 +1866,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>e-commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
                                     
 
                                 </li>
@@ -1879,7 +1930,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/education/" ><strong>education</strong></a>, 
+                                    <a href="/industry/education/" ><strong>Education</strong></a>, 
                                     
 
                                 </li>
@@ -1943,7 +1994,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/advertising/" ><strong>advertising</strong></a>, 
+                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a>, 
                                     
 
                                 </li>
@@ -2009,7 +2060,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/real-estate/" ><strong>real estate</strong></a>, 
+                                    <a href="/industry/real-estate/" ><strong>Real Estate</strong></a>, 
                                     
 
                                 </li>
@@ -2061,7 +2112,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
                                     
 
                                 </li>
@@ -2125,7 +2176,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>e-commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
                                     
 
                                 </li>
@@ -2193,7 +2244,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>e-commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
                                     
 
                                 </li>
@@ -2245,7 +2296,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/golf/" ><strong>golf</strong></a>, 
+                                    <a href="/industry/golf/" ><strong>Golf</strong></a>, 
                                     
 
                                 </li>
@@ -2307,7 +2358,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>e-commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
                                     
 
                                 </li>
@@ -2361,7 +2412,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/construction/" ><strong>construction</strong></a>, 
+                                    <a href="/industry/construction/" ><strong>Construction</strong></a>, 
                                     
 
                                 </li>
@@ -2409,7 +2460,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/accommodations/" ><strong>accommodations</strong></a>, 
+                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a>, 
                                     
 
                                 </li>
@@ -2451,7 +2502,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -2507,7 +2558,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -2561,7 +2612,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/real-estate/" ><strong>real estate</strong></a>, 
+                                    <a href="/industry/real-estate/" ><strong>Real Estate</strong></a>, 
                                     
 
                                 </li>
@@ -2617,7 +2668,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -2667,7 +2718,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/education/" ><strong>education</strong></a>, 
+                                    <a href="/industry/education/" ><strong>Education</strong></a>, 
                                     
 
                                 </li>
@@ -2725,7 +2776,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -2777,7 +2828,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>e-commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
                                     
 
                                 </li>
@@ -2833,7 +2884,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/accommodations/" ><strong>accommodations</strong></a>, 
+                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a>, 
                                     
 
                                 </li>
@@ -2875,7 +2926,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/advertising/" ><strong>advertising</strong></a>, 
+                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a>, 
                                     
 
                                 </li>
@@ -2921,7 +2972,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/accommodations/" ><strong>accommodations</strong></a>, 
+                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a>, 
                                     
 
                                 </li>
@@ -2979,7 +3030,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -3027,7 +3078,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -3085,7 +3136,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -3145,7 +3196,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -3201,7 +3252,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
                                     
 
                                 </li>
@@ -3253,7 +3304,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
                                     
 
                                 </li>
@@ -3303,7 +3354,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/education/" ><strong>education</strong></a>, 
+                                    <a href="/industry/education/" ><strong>Education</strong></a>, 
                                     
 
                                 </li>
@@ -3357,7 +3408,7 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>e-commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
                                     
 
                                 </li>
