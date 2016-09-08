@@ -78,6 +78,12 @@ h6 {
     color: #fff;
 }
 
+blockquote footer, blockquote small, blockquote .small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color:  #541935;
+}
 .badge:empty{
     display:block;
 }
