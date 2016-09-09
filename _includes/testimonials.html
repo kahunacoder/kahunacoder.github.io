@@ -1,0 +1,46 @@
+ <!-- About Section -->
+    <section class="success" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Testimonials</h2>
+                    <hr class="icon-kc-logo-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-justify" id="testimonials-content">
+                   {% raw %}
+                    <script id="testimonials-template" type="text/x-handlebars-template">
+                      
+                      <blockquote>
+                        <p>{{cells.Testimonial}}</p>
+                        <footer>{{cells.Company}}, {{cells.Title}}, <cite title="{{cells.Company}}, {{cells.Title}}">{{cells.Name}}</cite></footer>
+                      </blockquote>
+                    </script>
+                     {% endraw %}
+                </div>
+            </div>
+            {% include resume.html %}
+        </div>
+    </section>
+
+<script>    
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=6';
+    // Compile the Handlebars template for HR leaders.
+    var TestiTemplate = Handlebars.compile($('#testimonials-template').html());
+
+    $('#testimonials-content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E",
+      fetchSize: 10,
+      rowTemplate: TestiTemplate
+
+      // callback: function (error, options, response) {
+      //     //console.log(response);
+      //     $('#testimonials-content').html(marked( response.rows[1].cells.Testimonial ));
+      // }
+    });
+    });
+</script>
