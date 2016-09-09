@@ -26,6 +26,30 @@
     <link href="/favicon.ico?v=3" rel="shortcut icon">
  <!-- jQuery Version 1.11.0 -->
     <script src="/js/jquery-1.11.0.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65725332-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script>
+  /**
+  * Function that tracks a click on an outbound link in Analytics.
+  * This function takes a valid URL string as an argument, and uses that URL string
+  * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+  * using 'navigator.sendBeacon' in browser that support it.
+  */
+  var trackOutboundLink = function(url) {
+     ga('send', 'event', 'outbound', 'click', url, {
+       'transport': 'beacon'//,
+       //'hitCallback': function(){document.location = url;}
+     });
+  }
+
+</script>
     
 <!--     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  -->   
@@ -418,7 +442,7 @@
             </div>
             <div class="row">
     <div class="col-lg-8 col-lg-offset-2 text-center">
-      <a role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4"><i class="icon-kc-logo" style="font-weight:bold;"></i> View my Resume</a>
+      <a onclick="trackOutboundLink(this.href);" role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4"><i class="icon-kc-logo" style="font-weight:bold;"></i> View my Resume</a>
     </div>
 </div>
 
@@ -464,7 +488,7 @@
                             </li>
 		                    
                         </ul>
-                        <a role="button" class="btn btn-secondary-dark btn-sm" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4"><i class="icon-kc-logo" style="font-weight:bold;"></i> View my Resume</a>
+                        <a onclick="trackOutboundLink(this.href);" role="button" class="btn btn-secondary-dark btn-sm" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4"><i class="icon-kc-logo" style="font-weight:bold;"></i> View my Resume</a>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Credits</h3>
@@ -3164,16 +3188,12 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-65725332-1', 'auto');
-  ga('send', 'pageview');
 
-</script>
+
+
+
+
 
     </body>
 </html>
