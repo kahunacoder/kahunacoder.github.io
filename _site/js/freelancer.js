@@ -5,15 +5,15 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+// $(function() {
+//     $('.page-scroll a').bind('click', function(event) {
+//         var $anchor = $(this);
+//         $('html, body').stop().animate({
+//             scrollTop: $($anchor.attr('href')).offset().top
+//         }, 1500, 'easeInOutExpo');
+//         event.preventDefault();
+//     });
+// });
 
 // Floating label headings for the contact form
 $(function() {
@@ -24,6 +24,7 @@ $(function() {
     }).on("blur", ".floating-label-form-group", function() {
         $(this).removeClass("floating-label-form-group-with-focus");
     });
+    $('[data-toggle="popover"]').popover();
 });
 
 // Highlight the top nav as scrolling occurs

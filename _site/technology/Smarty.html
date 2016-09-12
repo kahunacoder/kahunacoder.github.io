@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kahuna Coder</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Building web sites since 1995">
     <link rel="canonical" href="http://www.kahunacoder.com/technology/smarty">
 
-
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+<!--     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ -->    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="/style.css">
 
     <!-- Custom Fonts -->
@@ -26,7 +26,33 @@
     <link href="/favicon.ico?v=3" rel="shortcut icon">
  <!-- jQuery Version 1.11.0 -->
     <script src="/js/jquery-1.11.0.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65725332-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script>
+  /**
+  * Function that tracks a click on an outbound link in Analytics.
+  * This function takes a valid URL string as an argument, and uses that URL string
+  * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+  * using 'navigator.sendBeacon' in browser that support it.
+  */
+  var trackOutboundLink = function(url) {
+     ga('send', 'event', 'Resume', 'Open', url, {
+       'transport': 'beacon'//,
+       //'hitCallback': function(){document.location = url;}
+     });
+  }
+
+</script>
     
+<!--     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ -->   
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -387,12 +413,12 @@
 </script>
 
      <!-- Cloud Section -->
-    <section class="success" id="cloud">
+    <section id="cloud">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Clouds</h2>
-                    <hr class="icon-kc-logo-light">
+                    <h2>Tags</h2>
+                    <hr class="icon-kc-logo-primary">
                 </div>
             </div>
             <div class="row">
@@ -627,7 +653,7 @@
             </div>
             <div class="row">
     <div class="col-lg-8 col-lg-offset-2 text-center">
-      <a role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4">View my Resume</a>
+      <a onclick="trackOutboundLink(this.href);" role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4"><i class="icon-kc-logo" style="font-weight:bold;"></i> View my Resume</a>
     </div>
 </div>
 
@@ -672,12 +698,12 @@
                             </li>
 		                    
                         </ul>
-                        <a role="button" class="btn btn-secondary-dark btn-sm" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4">View my Resume</a>
+                        <a onclick="trackOutboundLink(this.href);" role="button" class="btn btn-secondary-dark btn-sm" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4"><i class="icon-kc-logo" style="font-weight:bold;"></i> View my Resume</a>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Credits</h3>
                         <p>
-                            This site is meant to showcase projects that Gary Smith (kahunacoder) has worked on. 
+                            This site is meant to showcase projects that Gary Smith ( Kahuna Coder <a style="font-size:.7em;color:#fff;" href="javascript:void(0);" title="So who is Kahuna Coder then and what does it mean?" data-trigger="hover" data-toggle="popover" data-placement="left" data-content="Well, Kahuna Coder is my on line handle. I created it to differentiate myself from the thousands of other Gary Smith's on line. Having lived in Hawaii for 35+ years I used a Hawaiian word in my handle that means among other things an expert in any profession. It's interesting how the other meanings of kahuna are priest, sorcerer, magician, wizard, minister. I think the work of most experts can appear magical to the laymen."><sup><i class="fa fa-question"></i></sup></a> ) has worked on. 
                         </p>
                     </div>
                 </div>
@@ -713,7 +739,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Kauai Festivals</h2>
                             <hr class="icon-kc-logo-primary">
@@ -722,6 +748,12 @@
                                 <img src="/img/portfolio/kfe.jpg" class="img-responsive img-centered img-post" alt="Kauai Festivals">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>This site features information about festivals on Kauai. This is a complete <strong>update</strong> of their previous site that I built in <strong>2004</strong>. The new site features a <strong>simpler navigation</strong> system and <strong>larger images</strong> to reflect the larger <strong>monitors</strong> and higher <strong>resolutions</strong> that are used by <strong>modern web surfers</strong>.</p>
 
 <p>The site was built using my customized <strong>Zend Framework</strong>. It uses <strong>Blueprint Css</strong>, <strong>smarty</strong>, <strong>adodb</strong>, <strong>jquery</strong>, <strong>pear</strong> and <strong>HTML Quickforms</strong>.</p>
@@ -785,13 +817,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>WebCapabilities.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/wc.png" class="img-responsive img-centered img-post" alt="WebCapabilities.com">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>I would of liked to have <a href="http://www.tsunamimarketing.com/">Tsunami Marketing</a> <strong>design</strong> my site but I really couldn’t afford them and I didn’t want to have to build the <strong>front-end</strong> and a <strong>CMS</strong> as well. Robert, my former boss, was experimenting with <strong>Wordpress</strong> and found it to be quite good. That’s a <strong>huge endorsement</strong> coming from him since his <strong>designs</strong> are usually quite <strong>challenging</strong> to <strong>build</strong>. I was sure if he could live with any of the <strong>limitations imposed</strong> by <strong>off the shelf software</strong> so could I. I also thought it would be a great way to learn <strong>Wordpress</strong> so I could use it in <strong>future projects</strong>. I quickly found out how <strong>flexible</strong> <strong>Wordpress</strong> is without any <strong>coding</strong>. With my <strong>existing capabilities</strong> and <strong>skills</strong> I found I could do just about <strong>anything</strong> I wanted to a <strong>web site</strong>. <strong>Wordpress</strong> and <strong>Zend Framework</strong> are now my <strong>tools of choice</strong> when creating <strong>new sites</strong>.</p>
 
 <p>I built this site using <strong>Wordpress</strong> as a <strong>CMS</strong>. I used <strong>PHP</strong>, <strong>HTML</strong> and <strong>CSS</strong> to customize it. <strong>Not</strong> being a <strong>designer</strong> it was easy to build this using a <strong>theme</strong> and then <strong>modifying</strong> it. The <strong>screen captures</strong> of the <strong>sites</strong> I’ve done really <strong>stand out</strong> against this <strong>themes</strong> <strong>neutral colors</strong>.</p>
@@ -841,13 +879,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Holoholo Charters - II</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/hhc.jpg" class="img-responsive img-centered img-post" alt="Holoholo Charters - II">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Holoholo Charters web site was a <strong>redesign</strong> to take advantage of the higher <strong>resolutions</strong> and larger <strong>monitors</strong> used by web surfers today. We also <strong>streamlined</strong> the <strong>checkout process</strong> so users could make a <strong>reservation</strong> from Holoholo’s site using their <strong>secure server</strong> and <strong>Paypal</strong> without leaving their site.</p>
 
 <p>To achieve this we <strong>integrated</strong> their <strong>reservation system</strong> from <a href="http://atcosoftware.net/">Atco Software</a> into thier new site. We used Atco Software’s <strong>API</strong> to populate a <strong>Mysql</strong> <strong>database</strong> with the availability of their different tours. The <strong>database</strong> was <strong>queried</strong> and the <strong>data</strong> was used to populate <strong>calendar date pickers</strong> with only available dates for each of the tours. Once a tour was selected we <strong>checked the availability</strong> in <strong>real time</strong> to assure that the tour was still available, if it wasn’t, a selection of dates that were available for that tour was displayed. The user could then fill out <strong>forms</strong> to collect all the necessary <strong>data</strong> to make the reservation. The reservation was paid for using <strong>Paypal’s API</strong> and <strong>curl</strong> as the <strong>credit card processor</strong>. Once a successful transaction was completed the Atco reservation <strong>API</strong> and <strong>curl</strong> was used to reserve the tour and update the availability of that tour. A <strong>confirmation page</strong> was displayed and an <strong>email</strong> was sent to the user and Holoholo Charters.</p>
@@ -921,7 +965,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Air Ventures Hawaii</h2>
                             <hr class="icon-kc-logo-primary">
@@ -930,6 +974,12 @@
                                 <img src="/img/portfolio/air.jpg" class="img-responsive img-centered img-post" alt="Air Ventures Hawaii">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p><strong>Air Ventures Hawaii</strong> features masthead graphics that play as a <strong>slide show on load</strong>. There is also a slide show popup that uses <strong>smarty</strong> conf files to load graphics and captions. The <strong>reservation system</strong> integrates with A3H a <strong>third party</strong> reservation system to check availability and make a tour reservation. <strong>Jquery</strong> is used through out the site to create <strong>interactive components</strong> and customized heading elements.</p>
 </div>
                             <ul class="list-inline item-details">
@@ -987,7 +1037,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Silver Falls Ranch</h2>
                             <hr class="icon-kc-logo-primary">
@@ -996,6 +1046,12 @@
                                 <img src="/img/portfolio/sfr.jpg" class="img-responsive img-centered img-post" alt="Silver Falls Ranch">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Silver Falls Ranch uses <a href="http://atcosoftware.net/">Atco Software</a> to book their rides. We query their <strong>API</strong> using <strong>SOAP</strong> to get the rides availability and then block any days that are booked from showing in the <strong>calendar</strong> <strong>date picker</strong> for all their rides. We store the availability info in a <strong>Mysql</strong> <strong>database</strong> which we then <strong>query</strong> to create the <strong>calendars</strong>. When a user decides to book a ride we then query Atco’s <strong>API</strong> to confirm that the rides is still available. We then collect all the information required to reserve the ride on our <strong>secure server</strong>. Once all information is collected we use <strong>curl</strong> to post the reservation to Atco’s <strong>secure servers</strong>. A confirmation page is displayed and <strong>email</strong> is sent to the user and to Silver Falls Ranch.</p>
 
 <p>Aside from the <strong>e-commerce</strong> <strong>capabilities</strong> of the site there are <strong>slide shows</strong> and <strong>inline pop-ups</strong> to enhance the users experience. <strong>Javascript</strong> is also used to provide <strong>compatibility</strong> with older <strong>Microsoft</strong> <strong>browsers</strong> and display the <strong>PNG</strong> graphics which are <strong>absolutely positioned</strong> over other elements of the page.</p>
@@ -1063,13 +1119,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Tsunami Marketing - III</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/tsu.jpg" class="img-responsive img-centered img-post" alt="Tsunami Marketing - III">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Tsunami Marketing wanted to <strong>redesign</strong> their website to take advantage of users <strong>larger monitors</strong> to showcase their <strong>great designs</strong>. There are lots of <strong>layers</strong> and <strong>javascript</strong> used to create a <strong>interactive site</strong> that encourages users to <strong>view the next page</strong>. The site features <strong>navigation thumbnails</strong> that entice the visitor to click on them. An <strong>animated graphic</strong> is used as a <strong>background layer</strong> and displayed while the next graphic is <strong>loaded on-demand</strong> to increase the <strong>speed</strong> at which the <strong>page loads</strong>. The pages are <strong>centered</strong> <strong>vertically</strong> and <strong>horizontally</strong> on the page with a <strong>fixed width</strong> and <strong>height</strong>.</p>
 
 <p>A <strong>CMS</strong> is used on the back-end to allow Tsunami Staff to update the site without having to know <strong>HTML</strong>. <strong>Images</strong> are <strong>cropped</strong> and or <strong>re-sized</strong> and <strong>thumbnails</strong> are <strong>created</strong> using <strong>ImageMagick</strong> to ensure the sites layout is maintained.</p>
@@ -1129,13 +1191,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Wahooo Seafood Grill & Bar</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/jaj.jpg" class="img-responsive img-centered img-post" alt="Wahooo Seafood Grill & Bar">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p><strong>Wahooo Seafood Grill &amp; Bar</strong> was a new site for this Kapa’a restaurant. The <strong>navigation</strong> features a <strong>pull down fly out menu</strong> using <strong>jQuery</strong>. All menu items are update via <strong>smarty</strong> conf files. There is a <strong>CMS</strong> for adding items to the merchandise section. The merchandise section uses <strong>javascript</strong> to <strong>populate pull down menus</strong> based on selections made in <strong>other pull down menus</strong>. So choosing a color only shows sizes available in that color. A <strong>shopping cart</strong> is <strong>implemented</strong> to allow customers to <strong>purchase</strong> logo wear <strong>online</strong>. Checkout is done via a <strong>secure server</strong> and <strong>PayPal’s Website Payments Pro</strong> is used for the <strong>credit card processing</strong>. <strong>Express checkout</strong> is also implemented to allow <strong>PayPal</strong> clients to checkout as well.</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1191,7 +1259,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Kawaikini New Century Public Charter School</h2>
                             <hr class="icon-kc-logo-primary">
@@ -1200,6 +1268,12 @@
                                 <img src="/img/portfolio/hcs-hawaiian.jpg" class="img-responsive img-centered img-post" alt="Kawaikini New Century Public Charter School">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>This site uses a <strong>CMS</strong> based on <strong>smarty</strong> conf files. The <strong>site editor</strong> can log in via <strong>ch-rooted ftp</strong> and <strong>edit</strong> the conf <strong>files</strong> that create the site. Each page has a Hawaiian version and an English version. <strong>SIFR</strong> is used for the headline of each page and allows for changes to be made in the conf files as English and Hawaiian text.The page displays a <strong>flash image</strong> of the text in a font that isn’t a <strong>web font</strong>. A <strong>jQuery plugin</strong> is used to add shadows to images uploaded by the <strong>site editor</strong>.</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1251,13 +1325,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Island Truss</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/itc.jpg" class="img-responsive img-centered img-post" alt="Island Truss">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>The <a href="http://www.islandtruss.com/">Island Truss</a> website’s designer wanted to use a stencil style <strong>font</strong> which is unavailable to most users. The site <strong>content</strong> is <strong>dynamic</strong> and <strong>editable</strong> through a custom <strong>CMS</strong>. Creating graphics for all the text elements using the stencil font was not practical. Enter <a href="http://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement">sIFR</a>, <strong>sIFR</strong> is a technique that replaces text elements on a page with <strong>flash graphics</strong> set with the specified font and size. Thanks to a <strong>jQuery</strong> plugin, <strong>sIFR</strong> was easy to implement. The site also features a <strong>tab navigation system</strong> that loads section pages. There are <strong>gallery pages</strong> to showcase their truss designs and projects. The gallery images display an <strong>inline popup window</strong> when they are <strong>rolled over</strong>. Like all of our contact forms I use a <strong>spam prevention filter</strong> that doesn’t require the user to prove they are human (<strong>captcha</strong>).</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1309,13 +1389,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Poipu Beach Resort Association - II</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/pbr.jpg" class="img-responsive img-centered img-post" alt="Poipu Beach Resort Association - II">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>This <a href="http://www.poipubeach.org/">Poipu Beach Resort Association</a> website was a <strong>redesign</strong> of their site built in 1999. The site was built to take advantage of the <strong>larger</strong> <strong>monitors</strong> and <strong>resolutions</strong> enjoyed by web surfers today. The custom <strong>CMS</strong> was updated to allow the site editor to place <strong>teaser widgets</strong> on specific pages. There is also a <strong>weather widget</strong> which displays the current conditions and a <strong>search widget</strong>. <strong>jQuery</strong> is used for the <strong>pull down navigation</strong> and <strong>inline popup windows</strong>. There is a map section that uses <strong>goggle maps</strong> and a <strong>pull down menu</strong> to show you where members and places of interest are located. Member listings also feature a link to the <strong>dynamic map</strong> section. The <strong>contact form</strong> uses a <strong>filter</strong> to <strong>prevent robots</strong> from using the form to send <strong>spam</strong>. The filter eliminates the need for users to fill in <strong>captcha’s</strong>.** **</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1369,7 +1455,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Around Hawaii</h2>
                             <hr class="icon-kc-logo-primary">
@@ -1378,6 +1464,12 @@
                                 <img src="/img/portfolio/otw.jpg" class="img-responsive img-centered img-post" alt="Around Hawaii">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Around Hawaii is a <strong>portal</strong> site for Oceanic Time-Warner. This site features <strong>rounded corners</strong> and <strong>css sprites</strong> and a <strong>tabbed navigation system</strong>. Editors can add <strong>widgets</strong> to any page or page <strong>template</strong> using a <strong>drag and drop</strong> interface via <strong>ajax</strong> magic. It’s basically a <strong>custom blog</strong> where editors can <strong>upload content</strong> and <strong>members</strong> can <strong>comment</strong> on <strong>articles</strong>. This site was built with my <strong>custom framework</strong> which uses <strong>smarty</strong> and <strong>mod rewrite</strong>.</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1437,13 +1529,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Kauai Visitors Bureau - II</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/kvb.jpg" class="img-responsive img-centered img-post" alt="Kauai Visitors Bureau - II">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Kauai Visitors Bureau wanted to redesign their Kauai Discovery site to use <strong>lager images</strong> which would better show off the beauty of Kauai. Their previous site was designed with smaller monitors and resolutions that users had at the time. Their <strong>stats</strong> reflected that the majority of their visitors could support larger page sizes. The <strong>custom navigation</strong> for this site has a <strong>thumbnail image</strong> for each section in a <strong>pull down menu</strong> with <strong>rounded corners</strong> over a large image. The only way to achieve the rounded corners in all browsers including <strong>MSIE 6</strong> was to but the menus in <strong>tables</strong> and place <strong>transparent gifs</strong> in the corners. The <strong>thumbnail images</strong> for <strong>navigation</strong> also presented a problem with the number of<strong>concurrent request</strong> per page load. This was solved by using a technique called <strong>css sprites</strong> where the images are combined into a single image and then <strong>background position</strong> is used to select the image for display. <strong>Ajax</strong> and <strong>iframes</strong> are used to display <strong>navigation elements</strong> and <strong>member thumbnail images</strong> without page reloads.</p>
 
 <p>All information comes from the Hawaii Visitors and Conventions Bureau database via a <strong>xml http post</strong> to a script on the Kauai Visitors Bureau site. Kauai members update their information on the HVCB site and that information is then used to create their Kauai page.</p>
@@ -1507,13 +1605,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Brennecke's Beach Broiler</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/bbb.jpg" class="img-responsive img-centered img-post" alt="Brennecke's Beach Broiler">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Brennecke’s Beach Broiler site features a <strong>e-commerce</strong> section which allows them to <strong>sell</strong> logo wear and <strong>merchandise</strong>. The <strong>pull down menus</strong> are <strong>dynamic</strong> and use <strong>javascript</strong> so choosing a size populates the colors menu with only colors that are available for that size. Items can be added to their <strong>custom shopping cart</strong> for checkout later or they can checkout right from their <strong>cart</strong>. This site was built with my** custom framework** which uses <strong>MVC</strong> to separate code reduce redundancy and make the site easier to update and maintain. This site also uses <strong>mod-rewrite</strong> to create <strong>SEO</strong> friendly url’s.</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1573,13 +1677,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Ingage</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/ing.jpg" class="img-responsive img-centered img-post" alt="Ingage">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Ingage is one of the most complicated sites I’ve ever built. It’s a <strong>member site</strong> where members can be either a protege or a mentor or both. The Ingage Zone section of the site is where all the magic happens. Mentors and proteges interact with each other using a <strong>series of forms</strong> to <strong>schedule assignments</strong>, <strong>track time usage</strong>, <strong>upload materials</strong>, <strong>update their profiles</strong> and <strong>manage their accounts</strong>.</p>
 
 <p>The <strong>e-commerce</strong> section of the site allows proteges to <strong>purchase</strong> courses via a custom <strong>PayPal integration</strong> that uses <strong>PayPal IPN</strong> to provide instant access. Unfortunately the e-commerce section is currently broken after a server move.</p>
@@ -1637,13 +1747,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Tsunami Marketing - Client Intranet</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/tsu-client.jpg" class="img-responsive img-centered img-post" alt="Tsunami Marketing - Client Intranet">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Tsunami Marketing - Client Intranet is one of the coolest sites I’d done to date. It features a <strong>drag-n-drop</strong> interface and <strong>inline editing</strong> to simplify the user interface. This was my first <strong>ajax</strong> intensive site, thanks to the <strong>scriptaculous</strong> and <strong>prototype</strong> libraries it turned out well.</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1701,13 +1817,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Scott Hollinger RE/MAX of Bigfork</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/rmx.jpg" class="img-responsive img-centered img-post" alt="Scott Hollinger RE/MAX of Bigfork">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Scott Hollinger RE/MAX of Bigfork wanted a <strong>redesign</strong> to take advantage of <strong>larger monitor sizes</strong> and <strong>higher resolutions</strong>. The site features a unique way to <strong>search</strong> for property, Scott’s listings are shown on a <strong>map</strong> of the area with <strong>colored push pins</strong> which can be <strong>rolled over</strong> to view more details or <strong>clicked</strong> on to display all the details. The search area is<strong>embedded</strong> in an <strong>iframe</strong> and has <strong>tabs</strong> for searching by <strong>map</strong> or <strong>form</strong>. Users can <strong>save</strong> their favorite properties for easy viewing. All data is updated from their local mls service. My <strong>custom framework</strong> using <strong>smarty</strong> and <strong>mod-rewrite</strong> for <strong>SEO</strong> enhancements was used create a <strong>easy to maintain</strong> site and <strong>reduce code redundancy</strong>.</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1767,13 +1889,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Mahaulepu Heritage Trail</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/hmp.jpg" class="img-responsive img-centered img-post" alt="Mahaulepu Heritage Trail">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Mahaulepu Heritage Trail</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1819,7 +1947,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Lapperts Hawaii</h2>
                             <hr class="icon-kc-logo-primary">
@@ -1828,6 +1956,12 @@
                                 <img src="/img/portfolio/lap.jpg" class="img-responsive img-centered img-post" alt="Lapperts Hawaii">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Lappert’s Hawaii</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1883,7 +2017,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Mele.com</h2>
                             <hr class="icon-kc-logo-primary">
@@ -1892,6 +2026,12 @@
                                 <img src="/img/portfolio/mel.jpg" class="img-responsive img-centered img-post" alt="Mele.com">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Mele.com</p>
 </div>
                             <ul class="list-inline item-details">
@@ -1951,7 +2091,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Poipu Bay Golf Course</h2>
                             <hr class="icon-kc-logo-primary">
@@ -1960,6 +2100,12 @@
                                 <img src="/img/portfolio/kaw.jpg" class="img-responsive img-centered img-post" alt="Poipu Bay Golf Course">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Poipu Bay Golf Course</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2003,7 +2149,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Smiths Fern Grotto and Luau</h2>
                             <hr class="icon-kc-logo-primary">
@@ -2012,6 +2158,12 @@
                                 <img src="/img/portfolio/stp.jpg" class="img-responsive img-centered img-post" alt="Smiths Fern Grotto and Luau">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Smith’s Fern Grotto and Luau</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2065,13 +2217,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Pacific Tile</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/pct.jpg" class="img-responsive img-centered img-post" alt="Pacific Tile">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Pacific Tile</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2119,13 +2277,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Hanalei Colony Resort</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/hcr.jpg" class="img-responsive img-centered img-post" alt="Hanalei Colony Resort">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Hanalei Colony Resort</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2167,13 +2331,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Kauai Festivals</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/kfe-old.jpg" class="img-responsive img-centered img-post" alt="Kauai Festivals">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Kauai Festivals</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2209,13 +2379,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>MediaHi - Aloha-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/afh.jpg" class="img-responsive img-centered img-post" alt="MediaHi - Aloha-Hawaii.com">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>MediaHi - Aloha-Hawaii.com</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2265,13 +2441,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Regency Pacific Realty</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/rpr.jpg" class="img-responsive img-centered img-post" alt="Regency Pacific Realty">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Regency Pacific Realty</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2319,13 +2501,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>MediaHi - Postcards-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/pc-afh.jpg" class="img-responsive img-centered img-post" alt="MediaHi - Postcards-Hawaii.com">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>MediaHi - Postcards-Hawaii.com</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2375,13 +2563,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Kauai Historical Society</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/khs.jpg" class="img-responsive img-centered img-post" alt="Kauai Historical Society">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Kauai Historical Society</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2425,13 +2619,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>MediaHi - Search-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/sh-2.jpg" class="img-responsive img-centered img-post" alt="MediaHi - Search-Hawaii.com">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>MediaHi - Search-Hawaii.com</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2483,13 +2683,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Coconut Isles Trading Company</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/cit.jpg" class="img-responsive img-centered img-post" alt="Coconut Isles Trading Company">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Coconut Isles Trading Company</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2535,7 +2741,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Camp Sloggett</h2>
                             <hr class="icon-kc-logo-primary">
@@ -2544,6 +2750,12 @@
                                 <img src="/img/portfolio/ywc.jpg" class="img-responsive img-centered img-post" alt="Camp Sloggett">
                             </a>
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Camp Sloggett</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2591,13 +2803,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Graphic Communication  II</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/gc.jpg" class="img-responsive img-centered img-post" alt="Graphic Communication  II">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Graphic Communication - II</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2633,13 +2851,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Hyatt Regency Kauai Resort and Spa</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/hyt.jpg" class="img-responsive img-centered img-post" alt="Hyatt Regency Kauai Resort and Spa">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Hyatt Regency Kauai Resort and Spa</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2679,13 +2903,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Poipu Beach Resort Association</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/pbr-1.jpg" class="img-responsive img-centered img-post" alt="Poipu Beach Resort Association">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Poipu Beach Resort Association</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2737,13 +2967,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Kauai Film Commission</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/kfc.jpg" class="img-responsive img-centered img-post" alt="Kauai Film Commission">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Kauai Film Commission</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2785,13 +3021,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Aloha From Hawaii - Search-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/shw.jpg" class="img-responsive img-centered img-post" alt="Aloha From Hawaii - Search-Hawaii.com">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Aloha From Hawaii - Search-Hawaii.com</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2843,13 +3085,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Aloha From Hawaii - Postcards-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/ph-1.jpg" class="img-responsive img-centered img-post" alt="Aloha From Hawaii - Postcards-Hawaii.com">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Aloha From Hawaii - Postcards-Hawaii.com</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2903,13 +3151,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Aloha From Hawaii  Aloha-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/afh-old.jpg" class="img-responsive img-centered img-post" alt="Aloha From Hawaii  Aloha-Hawaii.com">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Aloha From Hawaii - Aloha-Hawaii.com</p>
 </div>
                             <ul class="list-inline item-details">
@@ -2959,13 +3213,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Safari Helicopters</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/saf-1.jpg" class="img-responsive img-centered img-post" alt="Safari Helicopters">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Safari Helicopters</p>
 </div>
                             <ul class="list-inline item-details">
@@ -3011,13 +3271,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Storytelling for the New Millennium Cyber Cafe</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/cafe.jpg" class="img-responsive img-centered img-post" alt="Storytelling for the New Millennium Cyber Cafe">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify"><p>Storytelling for the New Millennium Cyber Cafe</p>
 
 <p>This site features <strong>background patterns</strong>, <strong>tables</strong>, <strong>animated gifs</strong>, and the Netscape <strong>center</strong> tag. People attending the workshops were loaned <strong>digital cameras</strong> and given a space on the website to write their own story. Once their page was approved it was <strong>uploaded live</strong> during the conference. I also functioned as <strong>webmaster</strong> for this event.</p>
@@ -3061,13 +3327,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-12">
                         <div class="modal-body">
                             <h2>Kauai Exotix</h2>
                             <hr class="icon-kc-logo-primary">
                             
                             <img src="/img/portfolio/exo-1.jpg" class="img-responsive img-centered img-post" alt="Kauai Exotix">
                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="modal-body">
                             <div class="text-justify">
 </div>
                             <ul class="list-inline item-details">
@@ -3105,9 +3377,8 @@
         </div>
     </div>
 
-    
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript  -->
+    <script src="/js/bootstrap.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="/js/jquery.easing.min.js"></script>
@@ -3127,16 +3398,12 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-65725332-1', 'auto');
-  ga('send', 'pageview');
 
-</script>
+
+
+
+
 
     </body>
 </html>

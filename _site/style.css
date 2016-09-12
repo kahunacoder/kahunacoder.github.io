@@ -61,6 +61,35 @@ h6 {
     font-weight: 700;
 }
 
+.popover{
+    text-transform: none !important;
+    font-weight:normal !important;
+    font-size:12px !important;
+    color: #174B24;
+    background-color: #CDB6A0;
+    border-color:#174B24;
+}
+.popover-title {
+    border-color:#174B24;
+    text-transform: none !important;
+    font-weight:normal !important;
+    font-size:12px !important;
+    background-color: #541935;
+    color: #fff;
+}
+
+blockquote footer, blockquote small, blockquote .small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color:  #541935;
+}
+.badge:empty{
+    display:block;
+}
+.badge{
+    font-size:10px !important;
+}
 hr.star-light,
 hr.star-primary, hr.icon-kc-logo-light, hr.icon-kc-logo-primary {
     margin: 25px auto 30px;
@@ -200,7 +229,7 @@ header .intro-text .skills {
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:992px) {
     .navbar-fixed-top {
         padding: 25px 0;
         -webkit-transition: padding .3s;
