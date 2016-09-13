@@ -90,13 +90,7 @@
                         <a href="#portfolio">Projects</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#cloud">Clouds</a>
+                        <a href="#cloud">Tags</a>
                     </li>
                 </ul>
             </div>
@@ -114,11 +108,25 @@
                 <div class="col-lg-8 col-lg-offset-2">
                 	<div class="intro-text">
 	                    <span class="name">E-commerce</span>
+                      <blockquote id="wiki" cite="" class="text-justify" style="padding:0;">
+                        <div></div>
+                        <footer></footer>
+                      </blockquote>
 	                    <hr class="icon-kc-logo-light">
-	                    <div id="tag_info" class="skills text-justify"></div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-8  col-sm-offset-2 intro-text">
+                    <div class="text-justify skills " id="tag_info"></div>
+                </div>
+            </div>
+            <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a onclick="trackOutboundLink(this.href);" role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4"><i class="icon-kc-logo" style="font-weight:bold;"></i> View my Resume</a>
+    </div>
+</div>
+
         </div>
     </header>
 
@@ -126,7 +134,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-sm-8  col-sm-offset-2 text-center">
                     <h2>Projects Using E-commerce</h2>
                     <hr class="icon-kc-logo-primary">
                 </div>
@@ -134,7 +142,7 @@
             <div class="row">
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-34
+                        <a href="#portfolioModal-53
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -148,7 +156,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-36
+                        <a href="#portfolioModal-52
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -162,7 +170,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-42
+                        <a href="#portfolioModal-50
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -176,7 +184,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-46
+                        <a href="#portfolioModal-48
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -204,7 +212,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-53
+                        <a href="#portfolioModal-38
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -218,7 +226,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-45
+                        <a href="#portfolioModal-32
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -232,7 +240,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-49
+                        <a href="#portfolioModal-31
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -246,7 +254,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-43
+                        <a href="#portfolioModal-29
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -260,7 +268,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-57
+                        <a href="#portfolioModal-15
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -274,7 +282,7 @@
                     </div>
 					
                     <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-158
+                        <a href="#portfolioModal-3
 " class="portfolio-link" data-toggle="modal">
                             
                             <div class="caption">
@@ -288,13 +296,16 @@
                     </div>
 					
         </div>
+        <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a onclick="trackOutboundLink(this.href);" role="button" class="btn btn-primary btn-sm btn-resume" target="resume" href="https://docs.google.com/document/d/1slAZ5pF7Ai1oxN0Vv_kyvB_mKijH2nfQDWk922VxTJ4"><i class="icon-kc-logo" style="font-weight:bold;"></i> View my Resume</a>
+    </div>
+</div>
+
     </section>
 
 
   <script id="tag-template" type="text/x-handlebars-template">
-	<blockquote cite="{{ cellsArray.[4] }}">
-		{{ cellsArray.[5] }}
-	</blockquote>
       <p>I started using E-commerce in {{ cellsArray.[1] }}</p>
       <p>{{ cellsArray.[6] }}</p>
   </script>
@@ -311,22 +322,23 @@
     // Load top five HR leaders.
     $('#tag_info').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,F,G where A = 'E-commerce' order by A desc",
+      query: "select A,B,C,D,E,F,G where A = 'E-commerce'",
       rowTemplate: TagTemplate,
       callback: function (error, options, response) {
-          //console.log(error, options, response);
+          $('#wiki').attr('cite',response.rows[1].cellsArray[4]);
+          $('#wiki div').html(marked( response.rows[1].cellsArray[5] ));
+          $('#wiki footer').html('WikiPedia');
       }
     });
     });
 </script>
-
      <!-- Cloud Section -->
-    <section id="cloud">
+    <section id="cloud" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Tags</h2>
-                    <hr class="icon-kc-logo-primary">
+                    <hr class="icon-kc-logo-light">
                 </div>
             </div>
             <div class="row">
