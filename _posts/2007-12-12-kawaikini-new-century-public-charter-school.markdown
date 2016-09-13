@@ -8,6 +8,7 @@ layout: post
 slug: kawaikini-new-century-public-charter-school
 title: Kawaikini New Century Public Charter School
 modal-id: 63
+projectID: 47
 img: hcs-hawaiian.jpg
 alt: Kawaikini New Century Public Charter School
 categories:

@@ -19,7 +19,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ '/js/freelancer.js' | prepend: site.baseurl }}"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

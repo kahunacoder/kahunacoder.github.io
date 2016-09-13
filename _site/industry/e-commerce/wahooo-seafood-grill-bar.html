@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/jaj.jpg" class="img-responsive img-centered img-post" alt="Wahooo Seafood Grill & Bar">
                             
-                            <div class="text-justify"><p><strong>Wahooo Seafood Grill &amp; Bar</strong> was a new site for this Kapa’a restaurant. The <strong>navigation</strong> features a <strong>pull down fly out menu</strong> using <strong>jQuery</strong>. All menu items are update via <strong>smarty</strong> conf files. There is a <strong>CMS</strong> for adding items to the merchandise section. The merchandise section uses <strong>javascript</strong> to <strong>populate pull down menus</strong> based on selections made in <strong>other pull down menus</strong>. So choosing a color only shows sizes available in that color. A <strong>shopping cart</strong> is <strong>implemented</strong> to allow customers to <strong>purchase</strong> logo wear <strong>online</strong>. Checkout is done via a <strong>secure server</strong> and <strong>PayPal’s Website Payments Pro</strong> is used for the <strong>credit card processing</strong>. <strong>Express checkout</strong> is also implemented to allow <strong>PayPal</strong> clients to checkout as well.</p>
+                            <div class="text-justify post_content"><p><strong>Wahooo Seafood Grill &amp; Bar</strong> was a new site for this Kapa’a restaurant. The <strong>navigation</strong> features a <strong>pull down fly out menu</strong> using <strong>jQuery</strong>. All menu items are update via <strong>smarty</strong> conf files. There is a <strong>CMS</strong> for adding items to the merchandise section. The merchandise section uses <strong>javascript</strong> to <strong>populate pull down menus</strong> based on selections made in <strong>other pull down menus</strong>. So choosing a color only shows sizes available in that color. A <strong>shopping cart</strong> is <strong>implemented</strong> to allow customers to <strong>purchase</strong> logo wear <strong>online</strong>. Checkout is done via a <strong>secure server</strong> and <strong>PayPal’s Website Payments Pro</strong> is used for the <strong>credit card processing</strong>. <strong>Express checkout</strong> is also implemented to allow <strong>PayPal</strong> clients to checkout as well.</p>
 </div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
@@ -152,6 +152,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '48'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -553,7 +588,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

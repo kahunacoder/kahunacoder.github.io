@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/cafe.jpg" class="img-responsive img-centered img-post" alt="Storytelling for the New Millennium Cyber Cafe">
                             
-                            <div class="text-justify"><p>Storytelling for the New Millennium Cyber Cafe</p>
+                            <div class="text-justify post_content"><p>Storytelling for the New Millennium Cyber Cafe</p>
 
 <p>This site features <strong>background patterns</strong>, <strong>tables</strong>, <strong>animated gifs</strong>, and the Netscape <strong>center</strong> tag. People attending the workshops were loaned <strong>digital cameras</strong> and given a space on the website to write their own story. Once their page was approved it was <strong>uploaded live</strong> during the conference. I also functioned as <strong>webmaster</strong> for this event.</p>
 </div>
@@ -140,6 +140,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '4'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -541,7 +576,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

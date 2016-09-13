@@ -1,5 +1,6 @@
 ---
 author: admin
+status: publish
 liveurl: http://mele.com/
 status: publish
 comments: false
@@ -8,6 +9,7 @@ layout: post
 slug: mele-com
 title: Mele.com
 modal-id: 49
+projectID: 31
 img: mel.jpg
 alt: Mele.com
 categories:

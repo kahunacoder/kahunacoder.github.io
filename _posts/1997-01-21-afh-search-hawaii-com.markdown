@@ -1,11 +1,13 @@
 ---
 author: admin
+status: publish
 comments: false
 date: 1997-01-21 15:12:13+00:00
 layout: post
 slug: afh-search-hawaii-com
 title: Aloha From Hawaii - Search-Hawaii.com
 modal-id: 147
+projectID: 8
 img: shw.jpg
 alt: Aloha From Hawaii - Search-Hawaii.com
 categories:

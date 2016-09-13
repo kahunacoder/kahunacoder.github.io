@@ -7,6 +7,7 @@ layout: post
 slug: scott-hollinger-remax-of-bigfork
 title: Scott Hollinger RE/MAX of Bigfork
 modal-id: 52
+projectID: 35
 img: rmx.jpg
 alt: Scott Hollinger RE/MAX of Bigfork
 categories:

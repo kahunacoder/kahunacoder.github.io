@@ -1,11 +1,13 @@
 ---
 author: admin
+status: publish
 comments: false
 date: 2005-11-28 19:22:58+00:00
 layout: post
 slug: pacific-tile
 title: Pacific Tile
 modal-id: 50
+projectID: 27
 img: pct.jpg
 alt: Pacific Tile
 categories:

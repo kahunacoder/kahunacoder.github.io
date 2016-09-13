@@ -1,5 +1,6 @@
 ---
 author: admin
+status: publish
 liveurl: http://www.poipubaygolf.com/
 status: publish
 comments: false
@@ -8,6 +9,7 @@ layout: post
 slug: poipu-baygolf-course
 title: Poipu Bay Golf Course
 modal-id: 41
+projectID: 30
 img: kaw.jpg
 alt: Poipu Bay Golf Course
 categories:

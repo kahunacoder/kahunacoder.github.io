@@ -1,5 +1,6 @@
 ---
 author: admin
+status: publish
 liveurl: http://www.campingkauai.com/
 status: publish
 comments: false
@@ -8,6 +9,7 @@ layout: post
 slug: camp-sloggett
 title: Camp Sloggett
 modal-id: 54
+projectID: 14
 img: ywc.jpg
 alt: Camp Sloggett
 categories:

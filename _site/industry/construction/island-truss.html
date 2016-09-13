@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/itc.jpg" class="img-responsive img-centered img-post" alt="Island Truss">
                             
-                            <div class="text-justify"><p>The <a href="http://www.islandtruss.com/">Island Truss</a> website’s designer wanted to use a stencil style <strong>font</strong> which is unavailable to most users. The site <strong>content</strong> is <strong>dynamic</strong> and <strong>editable</strong> through a custom <strong>CMS</strong>. Creating graphics for all the text elements using the stencil font was not practical. Enter <a href="http://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement">sIFR</a>, <strong>sIFR</strong> is a technique that replaces text elements on a page with <strong>flash graphics</strong> set with the specified font and size. Thanks to a <strong>jQuery</strong> plugin, <strong>sIFR</strong> was easy to implement. The site also features a <strong>tab navigation system</strong> that loads section pages. There are <strong>gallery pages</strong> to showcase their truss designs and projects. The gallery images display an <strong>inline popup window</strong> when they are <strong>rolled over</strong>. Like all of our contact forms I use a <strong>spam prevention filter</strong> that doesn’t require the user to prove they are human (<strong>captcha</strong>).</p>
+                            <div class="text-justify post_content"><p>The <a href="http://www.islandtruss.com/">Island Truss</a> website’s designer wanted to use a stencil style <strong>font</strong> which is unavailable to most users. The site <strong>content</strong> is <strong>dynamic</strong> and <strong>editable</strong> through a custom <strong>CMS</strong>. Creating graphics for all the text elements using the stencil font was not practical. Enter <a href="http://en.wikipedia.org/wiki/Scalable_Inman_Flash_Replacement">sIFR</a>, <strong>sIFR</strong> is a technique that replaces text elements on a page with <strong>flash graphics</strong> set with the specified font and size. Thanks to a <strong>jQuery</strong> plugin, <strong>sIFR</strong> was easy to implement. The site also features a <strong>tab navigation system</strong> that loads section pages. There are <strong>gallery pages</strong> to showcase their truss designs and projects. The gallery images display an <strong>inline popup window</strong> when they are <strong>rolled over</strong>. Like all of our contact forms I use a <strong>spam prevention filter</strong> that doesn’t require the user to prove they are human (<strong>captcha</strong>).</p>
 </div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
@@ -148,6 +148,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '46'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -549,7 +584,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

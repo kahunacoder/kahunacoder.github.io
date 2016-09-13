@@ -1,6 +1,7 @@
  <!-- Portfolio Modals -->
  {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.projectID }}" tabindex="-1" role="dialog" aria-hidden="true">
+        
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -27,7 +28,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="modal-body">
-                            <div class="text-justify">{{ post.content }}</div>
+                            <div class="text-justify" id="post_content_{{ post.projectID }}"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     {% for tag in post.tags %}
@@ -51,5 +52,30 @@
                 </div>
             </div>
         </div>
+
+<script id="content-template_{{ post.projectID }}" type="text/x-handlebars-template">
+{% raw %}<p>{{formatMarkdown cells.Description}}</p>{% endraw %}
+</script>
+
+
+<script>    
+    $(document).ready(function() {
+        project_viewed_{{ post.projectID }} = false;
+
+        $('#portfolioModal-{{ post.projectID }}').on('show.bs.modal', function (e) {
+            if(project_viewed_{{ post.projectID }} == false){
+                var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+                var ContentTemplate_{{ post.projectID }} = Handlebars.compile($('#content-template_{{ post.projectID }}').text());
+
+                $('#post_content_{{ post.projectID }}').sheetrock({
+                  url: mySpreadsheet,
+                  query: "select G,H,I,J where A = {{ post.projectID }}",
+                  rowTemplate: ContentTemplate_{{ post.projectID }}
+                });
+               project_viewed_{{ post.projectID }} = true;
+            }
+        });
+    });
+</script>
     </div>
 {% endfor %}

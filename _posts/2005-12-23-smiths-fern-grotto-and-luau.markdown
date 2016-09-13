@@ -1,5 +1,6 @@
 ---
 author: admin
+status: publish
 liveurl: http://www.smithskauai.com/
 status: publish
 comments: false
@@ -8,6 +9,7 @@ layout: post
 slug: smiths-fern-grotto-and-luau
 title: Smiths Fern Grotto and Luau
 modal-id: 43
+projectID: 29
 img: stp.jpg
 alt: Smiths Fern Grotto and Luau
 categories:

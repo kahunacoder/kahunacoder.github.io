@@ -7,6 +7,7 @@ layout: post
 slug: poipu-beach-resort-association-2
 title: Poipu Beach Resort Association - II
 modal-id: 127
+projectID: 45
 img: pbr.jpg
 alt: Poipu Beach Resort Association - II
 categories:

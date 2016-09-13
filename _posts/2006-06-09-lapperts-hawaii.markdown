@@ -1,5 +1,6 @@
 ---
 author: admin
+status: publish
 liveurl: http://www.lappertshawaii.com/
 status: publish
 comments: false
@@ -8,6 +9,7 @@ layout: post
 slug: lapperts-hawaii
 title: Lapperts Hawaii
 modal-id: 45
+projectID: 32
 img: lap.jpg
 alt: Lapperts Hawaii
 categories:

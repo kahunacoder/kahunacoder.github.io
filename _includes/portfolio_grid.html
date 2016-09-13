@@ -17,7 +17,7 @@
         <div class="row">
             {% for post in site.posts %}
                 <div class="col-sm-4 portfolio-item">
-                    <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.modal-id }}{% endif %}
+                    <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.projectID }}{% endif %}
 " class="portfolio-link" data-toggle="modal">
                         {% if post.status == 'publish' %}
                         <div class="caption">

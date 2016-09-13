@@ -7,6 +7,7 @@ layout: post
 slug: webcapabilities-com
 title: WebCapabilities.com
 modal-id: 66
+projectID: 54
 img: wc.png
 alt: WebCapabilities.com
 categories:

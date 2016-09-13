@@ -1,11 +1,13 @@
 ---
 author: admin
+status: publish
 comments: false
 date: 1999-11-11 19:29:56+00:00
 layout: post
 slug: hyatt-regency-kauai-resort-and-spa
 title: Hyatt Regency Kauai Resort and Spa
 modal-id: 56
+projectID: 10
 img: hyt.jpg
 alt: Hyatt Regency Kauai Resort and Spa
 categories:
