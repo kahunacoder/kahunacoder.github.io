@@ -3553,7 +3553,7 @@
 </script>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal-0" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-9" tabindex="-1" role="dialog" aria-hidden="true">
         
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -3577,7 +3577,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="modal-body">
-                            <div class="text-justify" id="post_content_0"></div>
+                            <div class="text-justify" id="post_content_9"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
@@ -3606,26 +3606,26 @@
             </div>
         </div>
 
-<script id="content-template_0" type="text/x-handlebars-template">
+<script id="content-template_9" type="text/x-handlebars-template">
 <p>{{formatMarkdown cells.Description}}</p>
 </script>
 
 
 <script>    
     $(document).ready(function() {
-        project_viewed_0 = false;
+        project_viewed_9 = false;
 
-        $('#portfolioModal-0').on('show.bs.modal', function (e) {
-            if(project_viewed_0 == false){
+        $('#portfolioModal-9').on('show.bs.modal', function (e) {
+            if(project_viewed_9 == false){
                 var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
-                var ContentTemplate_0 = Handlebars.compile($('#content-template_0').text());
+                var ContentTemplate_9 = Handlebars.compile($('#content-template_9').text());
 
-                $('#post_content_0').sheetrock({
+                $('#post_content_9').sheetrock({
                   url: mySpreadsheet,
-                  query: "select G,H,I,J where A = 0",
-                  rowTemplate: ContentTemplate_0
+                  query: "select G,H,I,J where A = 9",
+                  rowTemplate: ContentTemplate_9
                 });
-               project_viewed_0 = true;
+               project_viewed_9 = true;
             }
         });
     });
