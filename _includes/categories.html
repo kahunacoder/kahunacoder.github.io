@@ -6,11 +6,20 @@
                 <div class="col-lg-8 col-lg-offset-2">
                 	<div class="intro-text">
 	                    <span class="name">{{ page.category }}</span>
+                          <blockquote id="wiki" cite="" class="text-justify" style="padding:0;">
+                            <div></div>
+                            <footer></footer>
+                          </blockquote>
 	                    <hr class="icon-kc-logo-light">
-	                    <div id="cagtegory_info" class="skills text-justify"></div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-8  col-sm-offset-2 intro-text">
+                    <div class="text-justify skills " id="category_info"></div>
+                </div>
+            </div>
+            {% include resume.html %}
         </div>
     </header>
 
@@ -26,7 +35,7 @@
             <div class="row">
 					{% for post in site.categories[page.category] random %}
                     <div class="col-sm-4 portfolio-item">
-                        <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.modal-id }}{% endif %}
+                        <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.projectID }}{% endif %}
 " class="portfolio-link" data-toggle="modal">
                             {% if post.status == 'publish' %}
                             <div class="caption">
@@ -40,13 +49,11 @@
                     </div>
 					{% endfor %}
         </div>
+        {% include resume.html %}
     </section>
 
 {% raw %}
   <script id="category-template" type="text/x-handlebars-template">
- 	<blockquote cite="{{ cellsArray.[3] }}">
-		{{ cellsArray.[2] }}
-	</blockquote>
      <p>I started building sites for the {% endraw %}{{ page.category }}{% raw %} industry in {{ cellsArray.[1] }}</p>
   </script>
 {% endraw %}
@@ -60,12 +67,15 @@
     var CategoryTemplate = Handlebars.compile($('#category-template').html());
 
     // Load top five HR leaders.
-    $('#cagtegory_info').sheetrock({
+    $('#category_info').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D where A = '{{ page.category }}' order by A desc",
+      query: "select A,B,C,D where A = '{{ page.category }}'",
+      labels: ['Name','Year','WikiDef','wiki'],
       rowTemplate: CategoryTemplate,
       callback: function (error, options, response) {
-          //console.log(error, options, response);
+          $('#wiki').attr('cite',response.rows[1].cellsArray[3]);
+          $('#wiki div').html(marked( response.rows[1].cellsArray[2] ));
+          $('#wiki footer').html('WikiPedia');
       }
     });
     });

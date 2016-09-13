@@ -6,11 +6,20 @@
                 <div class="col-lg-8 col-lg-offset-2">
                 	<div class="intro-text">
 	                    <span class="name">{{ page.tag }}</span>
+                      <blockquote id="wiki" cite="" class="text-justify" style="padding:0;">
+                        <div></div>
+                        <footer></footer>
+                      </blockquote>
 	                    <hr class="icon-kc-logo-light">
-	                    <div id="tag_info" class="skills text-justify"></div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-8  col-sm-offset-2 intro-text">
+                    <div class="text-justify skills " id="tag_info"></div>
+                </div>
+            </div>
+            {% include resume.html %}
         </div>
     </header>
 
@@ -18,7 +27,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-sm-8  col-sm-offset-2 text-center">
                     <h2>Projects Using {{ page.tag }}</h2>
                     <hr class="icon-kc-logo-primary">
                 </div>
@@ -26,7 +35,7 @@
             <div class="row">
 					{% for post in page.posts random %}
                     <div class="col-sm-4 portfolio-item">
-                        <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.modal-id }}{% endif %}
+                        <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.projectID }}{% endif %}
 " class="portfolio-link" data-toggle="modal">
                             {% if post.status == 'publish' %}
                             <div class="caption">
@@ -40,13 +49,11 @@
                     </div>
 					{% endfor %}
         </div>
+        {% include resume.html %}
     </section>
 
 {% raw %}
   <script id="tag-template" type="text/x-handlebars-template">
-	<blockquote cite="{{ cellsArray.[4] }}">
-		{{ cellsArray.[5] }}
-	</blockquote>
       <p>I started using {% endraw %}{{ page.tag }}{% raw %} in {{ cellsArray.[1] }}</p>
       <p>{{ cellsArray.[6] }}</p>
   </script>
@@ -63,10 +70,12 @@
     // Load top five HR leaders.
     $('#tag_info').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,F,G where A = '{{ page.tag }}' order by A desc",
+      query: "select A,B,C,D,E,F,G where A = '{{ page.tag }}'",
       rowTemplate: TagTemplate,
       callback: function (error, options, response) {
-          //console.log(error, options, response);
+          $('#wiki').attr('cite',response.rows[1].cellsArray[4]);
+          $('#wiki div').html(marked( response.rows[1].cellsArray[5] ));
+          $('#wiki footer').html('WikiPedia');
       }
     });
     });

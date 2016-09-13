@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             <div class="col-sm-8  col-sm-offset-2">
-                <div class="text-justify" id="projects-content"></div>
+                <div class="text-justify" id="projects-disclaimer"></div>
                 <hr class="icon-kc-logo-primary">
             </div>
         </div>
@@ -44,7 +44,7 @@
       query: "select A,B",
       callback: function (error, options, response) {
           //console.log(response);
-          $('#projects-content').html(marked( response.rows[1].cells.Message ));
+          $('#projects-disclaimer').html(marked( response.rows[1].cells.Message ));
       }
     });
     });

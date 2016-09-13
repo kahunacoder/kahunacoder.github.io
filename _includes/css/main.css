@@ -77,6 +77,13 @@ blockquote footer, blockquote small, blockquote .small {
     line-height: 1.42857143;
     color:  #541935;
 }
+
+blockquote{
+    padding:0;
+}
+
+
+
 .badge:empty{
     display:block;
 }
@@ -564,6 +571,9 @@ section.success, .intro-text {
 }
 blockquote {
     border: none;
+    padding:0;
+}
+
 }
 #cloud a{
     color:#{{ site.color.secondary-dark }};
