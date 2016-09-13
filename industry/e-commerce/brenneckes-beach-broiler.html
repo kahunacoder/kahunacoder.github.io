@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/bbb.jpg" class="img-responsive img-centered img-post" alt="Brennecke's Beach Broiler">
                             
-                            <div class="text-justify"><p>Brennecke’s Beach Broiler site features a <strong>e-commerce</strong> section which allows them to <strong>sell</strong> logo wear and <strong>merchandise</strong>. The <strong>pull down menus</strong> are <strong>dynamic</strong> and use <strong>javascript</strong> so choosing a size populates the colors menu with only colors that are available for that size. Items can be added to their <strong>custom shopping cart</strong> for checkout later or they can checkout right from their <strong>cart</strong>. This site was built with my** custom framework** which uses <strong>MVC</strong> to separate code reduce redundancy and make the site easier to update and maintain. This site also uses <strong>mod-rewrite</strong> to create <strong>SEO</strong> friendly url’s.</p>
+                            <div class="text-justify post_content"><p>Brennecke’s Beach Broiler site features a <strong>e-commerce</strong> section which allows them to <strong>sell</strong> logo wear and <strong>merchandise</strong>. The <strong>pull down menus</strong> are <strong>dynamic</strong> and use <strong>javascript</strong> so choosing a size populates the colors menu with only colors that are available for that size. Items can be added to their <strong>custom shopping cart</strong> for checkout later or they can checkout right from their <strong>cart</strong>. This site was built with my** custom framework** which uses <strong>MVC</strong> to separate code reduce redundancy and make the site easier to update and maintain. This site also uses <strong>mod-rewrite</strong> to create <strong>SEO</strong> friendly url’s.</p>
 </div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
@@ -156,6 +156,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '39'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -557,7 +592,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/ing.jpg" class="img-responsive img-centered img-post" alt="Ingage">
                             
-                            <div class="text-justify"><p>Ingage is one of the most complicated sites I’ve ever built. It’s a <strong>member site</strong> where members can be either a protege or a mentor or both. The Ingage Zone section of the site is where all the magic happens. Mentors and proteges interact with each other using a <strong>series of forms</strong> to <strong>schedule assignments</strong>, <strong>track time usage</strong>, <strong>upload materials</strong>, <strong>update their profiles</strong> and <strong>manage their accounts</strong>.</p>
+                            <div class="text-justify post_content"><p>Ingage is one of the most complicated sites I’ve ever built. It’s a <strong>member site</strong> where members can be either a protege or a mentor or both. The Ingage Zone section of the site is where all the magic happens. Mentors and proteges interact with each other using a <strong>series of forms</strong> to <strong>schedule assignments</strong>, <strong>track time usage</strong>, <strong>upload materials</strong>, <strong>update their profiles</strong> and <strong>manage their accounts</strong>.</p>
 
 <p>The <strong>e-commerce</strong> section of the site allows proteges to <strong>purchase</strong> courses via a custom <strong>PayPal integration</strong> that uses <strong>PayPal IPN</strong> to provide instant access. Unfortunately the e-commerce section is currently broken after a server move.</p>
 </div>
@@ -154,6 +154,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '38'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -555,7 +590,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

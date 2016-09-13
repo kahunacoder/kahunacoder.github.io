@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/hhc.jpg" class="img-responsive img-centered img-post" alt="Holoholo Charters - II">
                             
-                            <div class="text-justify"><p>Holoholo Charters web site was a <strong>redesign</strong> to take advantage of the higher <strong>resolutions</strong> and larger <strong>monitors</strong> used by web surfers today. We also <strong>streamlined</strong> the <strong>checkout process</strong> so users could make a <strong>reservation</strong> from Holoholo’s site using their <strong>secure server</strong> and <strong>Paypal</strong> without leaving their site.</p>
+                            <div class="text-justify post_content"><p>Holoholo Charters web site was a <strong>redesign</strong> to take advantage of the higher <strong>resolutions</strong> and larger <strong>monitors</strong> used by web surfers today. We also <strong>streamlined</strong> the <strong>checkout process</strong> so users could make a <strong>reservation</strong> from Holoholo’s site using their <strong>secure server</strong> and <strong>Paypal</strong> without leaving their site.</p>
 
 <p>To achieve this we <strong>integrated</strong> their <strong>reservation system</strong> from <a href="http://atcosoftware.net/">Atco Software</a> into thier new site. We used Atco Software’s <strong>API</strong> to populate a <strong>Mysql</strong> <strong>database</strong> with the availability of their different tours. The <strong>database</strong> was <strong>queried</strong> and the <strong>data</strong> was used to populate <strong>calendar date pickers</strong> with only available dates for each of the tours. Once a tour was selected we <strong>checked the availability</strong> in <strong>real time</strong> to assure that the tour was still available, if it wasn’t, a selection of dates that were available for that tour was displayed. The user could then fill out <strong>forms</strong> to collect all the necessary <strong>data</strong> to make the reservation. The reservation was paid for using <strong>Paypal’s API</strong> and <strong>curl</strong> as the <strong>credit card processor</strong>. Once a successful transaction was completed the Atco reservation <strong>API</strong> and <strong>curl</strong> was used to reserve the tour and update the availability of that tour. A <strong>confirmation page</strong> was displayed and an <strong>email</strong> was sent to the user and Holoholo Charters.</p>
 
@@ -170,6 +170,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '53'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -571,7 +606,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

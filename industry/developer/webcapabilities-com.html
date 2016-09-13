@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/wc.png" class="img-responsive img-centered img-post" alt="WebCapabilities.com">
                             
-                            <div class="text-justify"><p>I would of liked to have <a href="http://www.tsunamimarketing.com/">Tsunami Marketing</a> <strong>design</strong> my site but I really couldn’t afford them and I didn’t want to have to build the <strong>front-end</strong> and a <strong>CMS</strong> as well. Robert, my former boss, was experimenting with <strong>Wordpress</strong> and found it to be quite good. That’s a <strong>huge endorsement</strong> coming from him since his <strong>designs</strong> are usually quite <strong>challenging</strong> to <strong>build</strong>. I was sure if he could live with any of the <strong>limitations imposed</strong> by <strong>off the shelf software</strong> so could I. I also thought it would be a great way to learn <strong>Wordpress</strong> so I could use it in <strong>future projects</strong>. I quickly found out how <strong>flexible</strong> <strong>Wordpress</strong> is without any <strong>coding</strong>. With my <strong>existing capabilities</strong> and <strong>skills</strong> I found I could do just about <strong>anything</strong> I wanted to a <strong>web site</strong>. <strong>Wordpress</strong> and <strong>Zend Framework</strong> are now my <strong>tools of choice</strong> when creating <strong>new sites</strong>.</p>
+                            <div class="text-justify post_content"><p>I would of liked to have <a href="http://www.tsunamimarketing.com/">Tsunami Marketing</a> <strong>design</strong> my site but I really couldn’t afford them and I didn’t want to have to build the <strong>front-end</strong> and a <strong>CMS</strong> as well. Robert, my former boss, was experimenting with <strong>Wordpress</strong> and found it to be quite good. That’s a <strong>huge endorsement</strong> coming from him since his <strong>designs</strong> are usually quite <strong>challenging</strong> to <strong>build</strong>. I was sure if he could live with any of the <strong>limitations imposed</strong> by <strong>off the shelf software</strong> so could I. I also thought it would be a great way to learn <strong>Wordpress</strong> so I could use it in <strong>future projects</strong>. I quickly found out how <strong>flexible</strong> <strong>Wordpress</strong> is without any <strong>coding</strong>. With my <strong>existing capabilities</strong> and <strong>skills</strong> I found I could do just about <strong>anything</strong> I wanted to a <strong>web site</strong>. <strong>Wordpress</strong> and <strong>Zend Framework</strong> are now my <strong>tools of choice</strong> when creating <strong>new sites</strong>.</p>
 
 <p>I built this site using <strong>Wordpress</strong> as a <strong>CMS</strong>. I used <strong>PHP</strong>, <strong>HTML</strong> and <strong>CSS</strong> to customize it. <strong>Not</strong> being a <strong>designer</strong> it was easy to build this using a <strong>theme</strong> and then <strong>modifying</strong> it. The <strong>screen captures</strong> of the <strong>sites</strong> I’ve done really <strong>stand out</strong> against this <strong>themes</strong> <strong>neutral colors</strong>.</p>
 
@@ -146,6 +146,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '54'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -547,7 +582,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

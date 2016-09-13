@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/tsu.jpg" class="img-responsive img-centered img-post" alt="Tsunami Marketing - III">
                             
-                            <div class="text-justify"><p>Tsunami Marketing wanted to <strong>redesign</strong> their website to take advantage of users <strong>larger monitors</strong> to showcase their <strong>great designs</strong>. There are lots of <strong>layers</strong> and <strong>javascript</strong> used to create a <strong>interactive site</strong> that encourages users to <strong>view the next page</strong>. The site features <strong>navigation thumbnails</strong> that entice the visitor to click on them. An <strong>animated graphic</strong> is used as a <strong>background layer</strong> and displayed while the next graphic is <strong>loaded on-demand</strong> to increase the <strong>speed</strong> at which the <strong>page loads</strong>. The pages are <strong>centered</strong> <strong>vertically</strong> and <strong>horizontally</strong> on the page with a <strong>fixed width</strong> and <strong>height</strong>.</p>
+                            <div class="text-justify post_content"><p>Tsunami Marketing wanted to <strong>redesign</strong> their website to take advantage of users <strong>larger monitors</strong> to showcase their <strong>great designs</strong>. There are lots of <strong>layers</strong> and <strong>javascript</strong> used to create a <strong>interactive site</strong> that encourages users to <strong>view the next page</strong>. The site features <strong>navigation thumbnails</strong> that entice the visitor to click on them. An <strong>animated graphic</strong> is used as a <strong>background layer</strong> and displayed while the next graphic is <strong>loaded on-demand</strong> to increase the <strong>speed</strong> at which the <strong>page loads</strong>. The pages are <strong>centered</strong> <strong>vertically</strong> and <strong>horizontally</strong> on the page with a <strong>fixed width</strong> and <strong>height</strong>.</p>
 
 <p>A <strong>CMS</strong> is used on the back-end to allow Tsunami Staff to update the site without having to know <strong>HTML</strong>. <strong>Images</strong> are <strong>cropped</strong> and or <strong>re-sized</strong> and <strong>thumbnails</strong> are <strong>created</strong> using <strong>ImageMagick</strong> to ensure the sites layout is maintained.</p>
 </div>
@@ -156,6 +156,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '49'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -557,7 +592,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

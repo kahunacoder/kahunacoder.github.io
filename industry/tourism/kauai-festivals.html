@@ -113,7 +113,7 @@
                                 <img src="/img/portfolio/kfe.jpg" class="img-responsive img-centered img-post" alt="Kauai Festivals">
                             </a>
                             
-                            <div class="text-justify"><p>This site features information about festivals on Kauai. This is a complete <strong>update</strong> of their previous site that I built in <strong>2004</strong>. The new site features a <strong>simpler navigation</strong> system and <strong>larger images</strong> to reflect the larger <strong>monitors</strong> and higher <strong>resolutions</strong> that are used by <strong>modern web surfers</strong>.</p>
+                            <div class="text-justify post_content"><p>This site features information about festivals on Kauai. This is a complete <strong>update</strong> of their previous site that I built in <strong>2004</strong>. The new site features a <strong>simpler navigation</strong> system and <strong>larger images</strong> to reflect the larger <strong>monitors</strong> and higher <strong>resolutions</strong> that are used by <strong>modern web surfers</strong>.</p>
 
 <p>The site was built using my customized <strong>Zend Framework</strong>. It uses <strong>Blueprint Css</strong>, <strong>smarty</strong>, <strong>adodb</strong>, <strong>jquery</strong>, <strong>pear</strong> and <strong>HTML Quickforms</strong>.</p>
 
@@ -162,6 +162,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '55'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -563,7 +598,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

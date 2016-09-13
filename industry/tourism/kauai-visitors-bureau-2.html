@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/kvb.jpg" class="img-responsive img-centered img-post" alt="Kauai Visitors Bureau - II">
                             
-                            <div class="text-justify"><p>Kauai Visitors Bureau wanted to redesign their Kauai Discovery site to use <strong>lager images</strong> which would better show off the beauty of Kauai. Their previous site was designed with smaller monitors and resolutions that users had at the time. Their <strong>stats</strong> reflected that the majority of their visitors could support larger page sizes. The <strong>custom navigation</strong> for this site has a <strong>thumbnail image</strong> for each section in a <strong>pull down menu</strong> with <strong>rounded corners</strong> over a large image. The only way to achieve the rounded corners in all browsers including <strong>MSIE 6</strong> was to but the menus in <strong>tables</strong> and place <strong>transparent gifs</strong> in the corners. The <strong>thumbnail images</strong> for <strong>navigation</strong> also presented a problem with the number of<strong>concurrent request</strong> per page load. This was solved by using a technique called <strong>css sprites</strong> where the images are combined into a single image and then <strong>background position</strong> is used to select the image for display. <strong>Ajax</strong> and <strong>iframes</strong> are used to display <strong>navigation elements</strong> and <strong>member thumbnail images</strong> without page reloads.</p>
+                            <div class="text-justify post_content"><p>Kauai Visitors Bureau wanted to redesign their Kauai Discovery site to use <strong>lager images</strong> which would better show off the beauty of Kauai. Their previous site was designed with smaller monitors and resolutions that users had at the time. Their <strong>stats</strong> reflected that the majority of their visitors could support larger page sizes. The <strong>custom navigation</strong> for this site has a <strong>thumbnail image</strong> for each section in a <strong>pull down menu</strong> with <strong>rounded corners</strong> over a large image. The only way to achieve the rounded corners in all browsers including <strong>MSIE 6</strong> was to but the menus in <strong>tables</strong> and place <strong>transparent gifs</strong> in the corners. The <strong>thumbnail images</strong> for <strong>navigation</strong> also presented a problem with the number of<strong>concurrent request</strong> per page load. This was solved by using a technique called <strong>css sprites</strong> where the images are combined into a single image and then <strong>background position</strong> is used to select the image for display. <strong>Ajax</strong> and <strong>iframes</strong> are used to display <strong>navigation elements</strong> and <strong>member thumbnail images</strong> without page reloads.</p>
 
 <p>All information comes from the Hawaii Visitors and Conventions Bureau database via a <strong>xml http post</strong> to a script on the Kauai Visitors Bureau site. Kauai members update their information on the HVCB site and that information is then used to create their Kauai page.</p>
 </div>
@@ -160,6 +160,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '40'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -561,7 +596,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

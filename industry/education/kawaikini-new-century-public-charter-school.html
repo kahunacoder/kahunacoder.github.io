@@ -113,7 +113,7 @@
                                 <img src="/img/portfolio/hcs-hawaiian.jpg" class="img-responsive img-centered img-post" alt="Kawaikini New Century Public Charter School">
                             </a>
                             
-                            <div class="text-justify"><p>This site uses a <strong>CMS</strong> based on <strong>smarty</strong> conf files. The <strong>site editor</strong> can log in via <strong>ch-rooted ftp</strong> and <strong>edit</strong> the conf <strong>files</strong> that create the site. Each page has a Hawaiian version and an English version. <strong>SIFR</strong> is used for the headline of each page and allows for changes to be made in the conf files as English and Hawaiian text.The page displays a <strong>flash image</strong> of the text in a font that isn’t a <strong>web font</strong>. A <strong>jQuery plugin</strong> is used to add shadows to images uploaded by the <strong>site editor</strong>.</p>
+                            <div class="text-justify post_content"><p>This site uses a <strong>CMS</strong> based on <strong>smarty</strong> conf files. The <strong>site editor</strong> can log in via <strong>ch-rooted ftp</strong> and <strong>edit</strong> the conf <strong>files</strong> that create the site. Each page has a Hawaiian version and an English version. <strong>SIFR</strong> is used for the headline of each page and allows for changes to be made in the conf files as English and Hawaiian text.The page displays a <strong>flash image</strong> of the text in a font that isn’t a <strong>web font</strong>. A <strong>jQuery plugin</strong> is used to add shadows to images uploaded by the <strong>site editor</strong>.</p>
 </div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
@@ -150,6 +150,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '47'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -551,7 +586,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

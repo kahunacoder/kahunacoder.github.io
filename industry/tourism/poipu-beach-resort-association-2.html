@@ -111,7 +111,7 @@
                             
                             <img src="/img/portfolio/pbr.jpg" class="img-responsive img-centered img-post" alt="Poipu Beach Resort Association - II">
                             
-                            <div class="text-justify"><p>This <a href="http://www.poipubeach.org/">Poipu Beach Resort Association</a> website was a <strong>redesign</strong> of their site built in 1999. The site was built to take advantage of the <strong>larger</strong> <strong>monitors</strong> and <strong>resolutions</strong> enjoyed by web surfers today. The custom <strong>CMS</strong> was updated to allow the site editor to place <strong>teaser widgets</strong> on specific pages. There is also a <strong>weather widget</strong> which displays the current conditions and a <strong>search widget</strong>. <strong>jQuery</strong> is used for the <strong>pull down navigation</strong> and <strong>inline popup windows</strong>. There is a map section that uses <strong>goggle maps</strong> and a <strong>pull down menu</strong> to show you where members and places of interest are located. Member listings also feature a link to the <strong>dynamic map</strong> section. The <strong>contact form</strong> uses a <strong>filter</strong> to <strong>prevent robots</strong> from using the form to send <strong>spam</strong>. The filter eliminates the need for users to fill in <strong>captcha’s</strong>.** **</p>
+                            <div class="text-justify post_content"><p>This <a href="http://www.poipubeach.org/">Poipu Beach Resort Association</a> website was a <strong>redesign</strong> of their site built in 1999. The site was built to take advantage of the <strong>larger</strong> <strong>monitors</strong> and <strong>resolutions</strong> enjoyed by web surfers today. The custom <strong>CMS</strong> was updated to allow the site editor to place <strong>teaser widgets</strong> on specific pages. There is also a <strong>weather widget</strong> which displays the current conditions and a <strong>search widget</strong>. <strong>jQuery</strong> is used for the <strong>pull down navigation</strong> and <strong>inline popup windows</strong>. There is a map section that uses <strong>goggle maps</strong> and a <strong>pull down menu</strong> to show you where members and places of interest are located. Member listings also feature a link to the <strong>dynamic map</strong> section. The <strong>contact form</strong> uses a <strong>filter</strong> to <strong>prevent robots</strong> from using the form to send <strong>spam</strong>. The filter eliminates the need for users to fill in <strong>captcha’s</strong>.** **</p>
 </div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
@@ -150,6 +150,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '45'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -551,7 +586,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 

@@ -113,7 +113,7 @@
                                 <img src="/img/portfolio/sfr.jpg" class="img-responsive img-centered img-post" alt="Silver Falls Ranch">
                             </a>
                             
-                            <div class="text-justify"><p>Silver Falls Ranch uses <a href="http://atcosoftware.net/">Atco Software</a> to book their rides. We query their <strong>API</strong> using <strong>SOAP</strong> to get the rides availability and then block any days that are booked from showing in the <strong>calendar</strong> <strong>date picker</strong> for all their rides. We store the availability info in a <strong>Mysql</strong> <strong>database</strong> which we then <strong>query</strong> to create the <strong>calendars</strong>. When a user decides to book a ride we then query Atco’s <strong>API</strong> to confirm that the rides is still available. We then collect all the information required to reserve the ride on our <strong>secure server</strong>. Once all information is collected we use <strong>curl</strong> to post the reservation to Atco’s <strong>secure servers</strong>. A confirmation page is displayed and <strong>email</strong> is sent to the user and to Silver Falls Ranch.</p>
+                            <div class="text-justify post_content"><p>Silver Falls Ranch uses <a href="http://atcosoftware.net/">Atco Software</a> to book their rides. We query their <strong>API</strong> using <strong>SOAP</strong> to get the rides availability and then block any days that are booked from showing in the <strong>calendar</strong> <strong>date picker</strong> for all their rides. We store the availability info in a <strong>Mysql</strong> <strong>database</strong> which we then <strong>query</strong> to create the <strong>calendars</strong>. When a user decides to book a ride we then query Atco’s <strong>API</strong> to confirm that the rides is still available. We then collect all the information required to reserve the ride on our <strong>secure server</strong>. Once all information is collected we use <strong>curl</strong> to post the reservation to Atco’s <strong>secure servers</strong>. A confirmation page is displayed and <strong>email</strong> is sent to the user and to Silver Falls Ranch.</p>
 
 <p>Aside from the <strong>e-commerce</strong> <strong>capabilities</strong> of the site there are <strong>slide shows</strong> and <strong>inline pop-ups</strong> to enhance the users experience. <strong>Javascript</strong> is also used to provide <strong>compatibility</strong> with older <strong>Microsoft</strong> <strong>browsers</strong> and display the <strong>PNG</strong> graphics which are <strong>absolutely positioned</strong> over other elements of the page.</p>
 </div>
@@ -166,6 +166,41 @@
             </div>
         </div>
     </section>
+
+
+  <script class="content-template" type="text/x-handlebars-template">
+    <p>{{formatMarkdown cells.Description}}</p>
+  </script>
+
+
+<script>    
+    
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return marked(content); 
+    });
+
+
+
+    $(document).ready(function() {
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
+
+    // Compile the Handlebars template for HR leaders.
+    var ContentTemplate = Handlebars.compile($('.content-template').html());
+
+    // Load top five HR leaders.
+    $('.post_content').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F,G,H,I,J where A = '50'",
+      rowTemplate: ContentTemplate,
+      callback: function (error, options, response) {
+          console.log(error, options, response);
+      }
+    });
+    });
+</script>
+
+
 
      <!-- Cloud Section -->
     <section id="cloud">
@@ -567,7 +602,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/freelancer.js"></script>
 
+<script>
+    Handlebars.registerHelper("formatMarkdown", function(content) {
+      return new Handlebars.SafeString(marked(content));
+    });
 
+
+
+</script>
 
 
 
