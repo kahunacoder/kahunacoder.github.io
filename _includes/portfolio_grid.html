@@ -16,37 +16,26 @@
         </div>
         <div class="row">
             {% for post in site.posts %}
-                <div class="col-sm-4 portfolio-item">
-                    <a href="{% if post.status == 'publish' %}#portfolioModal-{{ post.projectID }}{% endif %}
-" class="portfolio-link" data-toggle="modal">
-                        {% if post.status == 'publish' %}
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        {% endif %}
-                        <img src="/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                    </a>
-                </div>
+                {% include grid_item.html %}
             {% endfor %}
+            {% include pager_buttons.html %}
+
         </div>
         {% include resume.html %}
     </div>
 </section>
 <script>    
     $(document).ready(function() {
-    // Define spreadsheet URL.
-    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=678730710';
+        var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=678730710';
+        $('#projects-content').sheetrock({
+          url: mySpreadsheet,
+          query: "select A,B",
+          callback: function (error, options, response) {
+              $('#projects-disclaimer').html(marked( response.rows[1].cells.Message ));
+          }
+        });
 
-    $('#projects-content').sheetrock({
-      url: mySpreadsheet,
-      query: "select A,B",
-      callback: function (error, options, response) {
-          //console.log(response);
-          $('#projects-disclaimer').html(marked( response.rows[1].cells.Message ));
-      }
-    });
+
     });
 </script>
 

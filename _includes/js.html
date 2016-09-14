@@ -23,9 +23,16 @@
     Handlebars.registerHelper("formatMarkdown", function(content) {
       return new Handlebars.SafeString(marked(content));
     });
-
-
-
+    var showMore = function (proj){
+        $('.portfolio-item').removeClass(proj);
+        $('.show_'+proj).hide();
+        if(proj=='fourth_more'){
+            $('.show_half_more').show();
+        }
+        if(proj=='half_more'){
+            $('.three_fourth_more').show();
+        }
+    }
 </script>
 
 

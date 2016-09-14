@@ -9,9 +9,6 @@
     <meta name="description" content="Building web sites since 1995">
     <link rel="canonical" href="http://www.kahunacoder.com/technology/prototype">
 
-<!--     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- -->    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="/style.css">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
@@ -19,40 +16,37 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
     <link href="/img/touch/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
     <link href="/img/touch/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
     <link href="/img/touch/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
     <link href="/img/touch/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed" sizes="57x57">
     <link href="/favicon.ico?v=3" rel="shortcut icon">
- <!-- jQuery Version 1.11.0 -->
+
     <script src="/js/jquery-1.11.0.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-65725332-1', 'auto');
+      ga('send', 'pageview');
 
-  ga('create', 'UA-65725332-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<script>
-  /**
-  * Function that tracks a click on an outbound link in Analytics.
-  * This function takes a valid URL string as an argument, and uses that URL string
-  * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-  * using 'navigator.sendBeacon' in browser that support it.
-  */
-  var trackOutboundLink = function(url) {
-     ga('send', 'event', 'Resume', 'Open', url, {
-       'transport': 'beacon'//,
-       //'hitCallback': function(){document.location = url;}
-     });
-  }
-
-</script>
-    
-<!--     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- -->   
+      /**
+      * Function that tracks a click on an outbound link in Analytics.
+      * This function takes a valid URL string as an argument, and uses that URL string
+      * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+      * using 'navigator.sendBeacon' in browser that support it.
+      */
+      var trackOutboundLink = function(url) {
+         ga('send', 'event', 'Resume', 'Open', url, {
+           'transport': 'beacon'//,
+           //'hitCallback': function(){document.location = url;}
+         });
+      }
+    </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -141,20 +135,53 @@
             </div>
             <div class="row">
 					
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-37
+            
+<div class="col-sm-4 portfolio-item   ">
+    <a href="#portfolioModal-37
 " class="portfolio-link" data-toggle="modal">
-                            
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            
-                            <img src="/img/portfolio/tsu-client.jpg" class="img-responsive" alt="Tsunami Marketing - Client Intranet">
-                        </a>
-                    </div>
+        
+        <div class="caption">
+            <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x primary-color"></i>
+           </div>
+            <div class="jumbotron caption-jumbotron">
+                <h4 class="text-center">Technology</h4>
+                <div class="text-center">
+                
+                AJAX, 
+                
+                CMS, 
+                
+                CSS, 
+                
+                HTML, 
+                
+                Javascript, 
+                
+                MySql, 
+                
+                PHP, 
+                
+                prototype, 
+                
+                scriptaculous, 
+                
+                Smarty, 
+                
+                SVN
+                
+                </div>
+            </div>
+        </div>
+        
+        <img src="/img/portfolio/tsu-client.jpg" class="img-responsive img-grayscale" alt="Tsunami Marketing - Client Intranet">
+    </a>
+</div>
+
 					
+          
+
+
         </div>
         <div class="row">
     <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -521,47 +548,45 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Kauai Festivals</h2>
                             <hr class="icon-kc-logo-primary">
                             
-                            <a href="http://www.kauaifestivals.com" target="_blank" class="modal-link">
-                                <img src="/img/portfolio/kfe.jpg" class="img-responsive img-centered img-post" alt="Kauai Festivals">
-                            </a>
+                            <img src="/img/portfolio/kfe.jpg" class="img-responsive img-centered img-post" alt="Kauai Festivals">
                             
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_55"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/flash.html" ><strong>Flash</strong></a>, 
+                                    <a href="/technology/flash.html" ><strong>Flash</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>,  
                                     
-                                    <a href="/technology/zend-framework.html" ><strong>Zend Framework</strong></a>, 
+                                    <a href="/technology/zend-framework.html" ><strong>Zend Framework</strong></a> 
                                     
                                 
                                 </li>
@@ -570,12 +595,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -620,7 +645,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>WebCapabilities.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -631,20 +656,20 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_54"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/wordpress.html" ><strong>Wordpress</strong></a>, 
+                                    <a href="/technology/wordpress.html" ><strong>Wordpress</strong></a> 
                                     
                                 
                                 </li>
@@ -653,12 +678,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/developer/" ><strong>Developer</strong></a>, 
+                                    <a href="/industry/developer/" ><strong>Developer</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -703,7 +728,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Holoholo Charters - II</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -714,42 +739,42 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_53"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/curl.html" ><strong>Curl</strong></a>, 
+                                    <a href="/technology/curl.html" ><strong>Curl</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/imagemagick.html" ><strong>ImageMagick</strong></a>, 
+                                    <a href="/technology/imagemagick.html" ><strong>ImageMagick</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>, 
+                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/soap.html" ><strong>SOAP</strong></a>, 
+                                    <a href="/technology/soap.html" ><strong>SOAP</strong></a>,  
                                     
-                                    <a href="/technology/ssl.html" ><strong>SSL</strong></a>, 
+                                    <a href="/technology/ssl.html" ><strong>SSL</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -758,12 +783,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -808,7 +833,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Air Ventures Hawaii</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -821,32 +846,32 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_52"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/a3h.html" ><strong>A3H</strong></a>, 
+                                    <a href="/technology/a3h.html" ><strong>A3H</strong></a>,  
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -855,12 +880,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -905,7 +930,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Silver Falls Ranch</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -918,40 +943,40 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_50"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/api.html" ><strong>API</strong></a>, 
+                                    <a href="/technology/api.html" ><strong>API</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/curl.html" ><strong>Curl</strong></a>, 
+                                    <a href="/technology/curl.html" ><strong>Curl</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/shopping-cart.html" ><strong>Shopping Cart</strong></a>, 
+                                    <a href="/technology/shopping-cart.html" ><strong>Shopping Cart</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/soap.html" ><strong>SOAP</strong></a>, 
+                                    <a href="/technology/soap.html" ><strong>SOAP</strong></a>,  
                                     
-                                    <a href="/technology/ssl.html" ><strong>SSL</strong></a>, 
+                                    <a href="/technology/ssl.html" ><strong>SSL</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -960,12 +985,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1010,7 +1035,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Tsunami Marketing - III</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1021,32 +1046,32 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_49"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/imagemagick.html" ><strong>ImageMagick</strong></a>, 
+                                    <a href="/technology/imagemagick.html" ><strong>ImageMagick</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -1055,12 +1080,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a>, 
+                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1105,7 +1130,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Wahooo Seafood Grill & Bar</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1116,30 +1141,30 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_48"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>, 
+                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>,  
                                     
-                                    <a href="/technology/website-payments-pro.html" ><strong>Website Payments Pro</strong></a>, 
+                                    <a href="/technology/website-payments-pro.html" ><strong>Website Payments Pro</strong></a> 
                                     
                                 
                                 </li>
@@ -1148,12 +1173,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1198,7 +1223,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Kawaikini New Century Public Charter School</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1211,26 +1236,26 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_47"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/sifr.html" ><strong>SIFR</strong></a>, 
+                                    <a href="/technology/sifr.html" ><strong>SIFR</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a> 
                                     
                                 
                                 </li>
@@ -1239,12 +1264,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/education/" ><strong>Education</strong></a>, 
+                                    <a href="/industry/education/" ><strong>Education</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1289,7 +1314,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Island Truss</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1300,26 +1325,26 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_46"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/sifr.html" ><strong>SIFR</strong></a>, 
+                                    <a href="/technology/sifr.html" ><strong>SIFR</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -1328,12 +1353,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/construction/" ><strong>Construction</strong></a>, 
+                                    <a href="/industry/construction/" ><strong>Construction</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1378,7 +1403,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Poipu Beach Resort Association - II</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1389,28 +1414,28 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_45"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -1419,12 +1444,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1469,7 +1494,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Around Hawaii</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1482,34 +1507,34 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_43"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/sprites.html" ><strong>Sprites</strong></a>, 
+                                    <a href="/technology/sprites.html" ><strong>Sprites</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/imagemagick.html" ><strong>ImageMagick</strong></a>, 
+                                    <a href="/technology/imagemagick.html" ><strong>ImageMagick</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -1518,12 +1543,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1568,7 +1593,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Kauai Visitors Bureau - II</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1579,36 +1604,36 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_40"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/google-search.html" ><strong>Google Search</strong></a>, 
+                                    <a href="/technology/google-search.html" ><strong>Google Search</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>,  
                                     
-                                    <a href="/technology/tables.html" ><strong>Tables</strong></a>, 
+                                    <a href="/technology/tables.html" ><strong>Tables</strong></a>,  
                                     
-                                    <a href="/technology/xml.html" ><strong>XML</strong></a>, 
+                                    <a href="/technology/xml.html" ><strong>XML</strong></a> 
                                     
                                 
                                 </li>
@@ -1617,12 +1642,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1667,7 +1692,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Brennecke's Beach Broiler</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1678,34 +1703,34 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_39"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mod-rewrite.html" ><strong>mod-rewrite</strong></a>, 
+                                    <a href="/technology/mod-rewrite.html" ><strong>mod-rewrite</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/seo.html" ><strong>SEO</strong></a>, 
+                                    <a href="/technology/seo.html" ><strong>SEO</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -1714,12 +1739,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1764,7 +1789,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Ingage</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1775,30 +1800,30 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_38"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>, 
+                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>,  
                                     
-                                    <a href="/technology/paypal-ipn.html" ><strong>PayPal IPN</strong></a>, 
+                                    <a href="/technology/paypal-ipn.html" ><strong>PayPal IPN</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -1807,12 +1832,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/education/" ><strong>Education</strong></a>, 
+                                    <a href="/industry/education/" ><strong>Education</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1857,7 +1882,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Tsunami Marketing - Client Intranet</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1868,32 +1893,32 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_37"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/prototype.html" ><strong>prototype</strong></a>, 
+                                    <a href="/technology/prototype.html" ><strong>prototype</strong></a>,  
                                     
-                                    <a href="/technology/scriptaculous.html" ><strong>scriptaculous</strong></a>, 
+                                    <a href="/technology/scriptaculous.html" ><strong>scriptaculous</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -1902,12 +1927,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a>, 
+                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -1952,7 +1977,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Scott Hollinger RE/MAX of Bigfork</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -1963,34 +1988,34 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_35"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/iframe.html" ><strong>iframe</strong></a>, 
+                                    <a href="/technology/iframe.html" ><strong>iframe</strong></a>,  
                                     
-                                    <a href="/technology/imagemagick.html" ><strong>ImageMagick</strong></a>, 
+                                    <a href="/technology/imagemagick.html" ><strong>ImageMagick</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mod-rewrite.html" ><strong>mod-rewrite</strong></a>, 
+                                    <a href="/technology/mod-rewrite.html" ><strong>mod-rewrite</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -1999,12 +2024,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/real-estate/" ><strong>Real Estate</strong></a>, 
+                                    <a href="/industry/real-estate/" ><strong>Real Estate</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2049,7 +2074,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Mahaulepu Heritage Trail</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2060,20 +2085,20 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_34"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a> 
                                     
                                 
                                 </li>
@@ -2082,12 +2107,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2132,7 +2157,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Lapperts Hawaii</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2145,30 +2170,30 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_32"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/payflow.html" ><strong>Payflow</strong></a>, 
+                                    <a href="/technology/payflow.html" ><strong>Payflow</strong></a>,  
                                     
-                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>, 
+                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -2177,12 +2202,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2227,7 +2252,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Mele.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2240,34 +2265,34 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_31"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/express-checkout.html" ><strong>Express Checkout</strong></a>, 
+                                    <a href="/technology/express-checkout.html" ><strong>Express Checkout</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>, 
+                                    <a href="/technology/paypal.html" ><strong>PayPal</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/shopping-cart.html" ><strong>Shopping Cart</strong></a>, 
+                                    <a href="/technology/shopping-cart.html" ><strong>Shopping Cart</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -2276,12 +2301,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2326,7 +2351,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Poipu Bay Golf Course</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2339,18 +2364,18 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_30"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a> 
                                     
                                 
                                 </li>
@@ -2359,12 +2384,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/golf/" ><strong>Golf</strong></a>, 
+                                    <a href="/industry/golf/" ><strong>Golf</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2409,7 +2434,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Smiths Fern Grotto and Luau</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2422,28 +2447,28 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_29"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/a3h.html" ><strong>A3H</strong></a>, 
+                                    <a href="/technology/a3h.html" ><strong>A3H</strong></a>,  
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>, 
+                                    <a href="/technology/jquery.html" ><strong>jQuery</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>, 
+                                    <a href="/technology/smarty.html" ><strong>Smarty</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -2452,12 +2477,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2502,7 +2527,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Pacific Tile</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2513,22 +2538,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_27"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a> 
                                     
                                 
                                 </li>
@@ -2537,12 +2562,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/construction/" ><strong>Construction</strong></a>, 
+                                    <a href="/industry/construction/" ><strong>Construction</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2587,7 +2612,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Hanalei Colony Resort</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2598,16 +2623,16 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_26"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a> 
                                     
                                 
                                 </li>
@@ -2616,12 +2641,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a>, 
+                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2666,7 +2691,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Kauai Festivals</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2677,7 +2702,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_23"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
@@ -2689,12 +2714,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2739,7 +2764,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>MediaHi - Aloha-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2750,24 +2775,24 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_22"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/flash.html" ><strong>Flash</strong></a>, 
+                                    <a href="/technology/flash.html" ><strong>Flash</strong></a>,  
                                     
-                                    <a href="/technology/google-ads.html" ><strong>Google Ads</strong></a>, 
+                                    <a href="/technology/google-ads.html" ><strong>Google Ads</strong></a>,  
                                     
-                                    <a href="/technology/google-search.html" ><strong>Google Search</strong></a>, 
+                                    <a href="/technology/google-search.html" ><strong>Google Search</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a> 
                                     
                                 
                                 </li>
@@ -2776,12 +2801,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2826,7 +2851,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Regency Pacific Realty</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2837,22 +2862,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_20"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a> 
                                     
                                 
                                 </li>
@@ -2861,12 +2886,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/real-estate/" ><strong>Real Estate</strong></a>, 
+                                    <a href="/industry/real-estate/" ><strong>Real Estate</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2911,7 +2936,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>MediaHi - Postcards-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -2922,24 +2947,24 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_19"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/tables.html" ><strong>Tables</strong></a>, 
+                                    <a href="/technology/tables.html" ><strong>Tables</strong></a> 
                                     
                                 
                                 </li>
@@ -2948,12 +2973,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -2998,7 +3023,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Kauai Historical Society</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3009,18 +3034,18 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_18"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a> 
                                     
                                 
                                 </li>
@@ -3029,12 +3054,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/education/" ><strong>Education</strong></a>, 
+                                    <a href="/industry/education/" ><strong>Education</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3079,7 +3104,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>MediaHi - Search-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3090,26 +3115,26 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_17"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/python.html" ><strong>Python</strong></a>, 
+                                    <a href="/technology/python.html" ><strong>Python</strong></a>,  
                                     
-                                    <a href="/technology/tables.html" ><strong>Tables</strong></a>, 
+                                    <a href="/technology/tables.html" ><strong>Tables</strong></a> 
                                     
                                 
                                 </li>
@@ -3118,12 +3143,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3168,7 +3193,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Coconut Isles Trading Company</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3179,20 +3204,20 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_15"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>, 
+                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>, 
+                                    <a href="/technology/perl.html" ><strong>Perl</strong></a> 
                                     
                                 
                                 </li>
@@ -3201,12 +3226,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3251,7 +3276,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Camp Sloggett</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3264,22 +3289,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_14"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/flash.html" ><strong>Flash</strong></a>, 
+                                    <a href="/technology/flash.html" ><strong>Flash</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a> 
                                     
                                 
                                 </li>
@@ -3288,12 +3313,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a>, 
+                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3338,7 +3363,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Graphic Communication  II</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3349,7 +3374,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_12"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
@@ -3361,12 +3386,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a>, 
+                                    <a href="/industry/advertising/" ><strong>Advertising</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3411,7 +3436,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Hyatt Regency Kauai Resort and Spa</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3422,14 +3447,14 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_10"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a> 
                                     
                                 
                                 </li>
@@ -3438,12 +3463,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a>, 
+                                    <a href="/industry/accommodations/" ><strong>Accommodations</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3488,7 +3513,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Poipu Beach Resort Association</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3499,26 +3524,26 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_11"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>, 
+                                    <a href="/technology/ajax.html" ><strong>AJAX</strong></a>,  
                                     
-                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>, 
+                                    <a href="/technology/cms.html" ><strong>CMS</strong></a>,  
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>, 
+                                    <a href="/technology/mysql.html" ><strong>MySql</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a>,  
                                     
-                                    <a href="/technology/svn.html" ><strong>SVN</strong></a>, 
+                                    <a href="/technology/svn.html" ><strong>SVN</strong></a> 
                                     
                                 
                                 </li>
@@ -3527,12 +3552,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3577,7 +3602,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Kauai Film Commission</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3588,16 +3613,16 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_9"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/css.html" ><strong>CSS</strong></a>, 
+                                    <a href="/technology/css.html" ><strong>CSS</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/php.html" ><strong>PHP</strong></a>, 
+                                    <a href="/technology/php.html" ><strong>PHP</strong></a> 
                                     
                                 
                                 </li>
@@ -3606,12 +3631,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3656,7 +3681,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Aloha From Hawaii - Search-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3667,26 +3692,26 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_8"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>, 
+                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>, 
+                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>,  
                                     
-                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>, 
+                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>,  
                                     
-                                    <a href="/technology/python.html" ><strong>Python</strong></a>, 
+                                    <a href="/technology/python.html" ><strong>Python</strong></a>,  
                                     
-                                    <a href="/technology/ssi.html" ><strong>SSI</strong></a>, 
+                                    <a href="/technology/ssi.html" ><strong>SSI</strong></a>,  
                                     
-                                    <a href="/technology/tables.html" ><strong>Tables</strong></a>, 
+                                    <a href="/technology/tables.html" ><strong>Tables</strong></a> 
                                     
                                 
                                 </li>
@@ -3695,12 +3720,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3745,7 +3770,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Aloha From Hawaii - Postcards-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3756,28 +3781,28 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_7"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/c.html" ><strong>C</strong></a>, 
+                                    <a href="/technology/c.html" ><strong>C</strong></a>,  
                                     
-                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>, 
+                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>,  
                                     
-                                    <a href="/technology/gcc.html" ><strong>GCC</strong></a>, 
+                                    <a href="/technology/gcc.html" ><strong>GCC</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>, 
+                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>,  
                                     
-                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>, 
+                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>,  
                                     
-                                    <a href="/technology/ssi.html" ><strong>SSI</strong></a>, 
+                                    <a href="/technology/ssi.html" ><strong>SSI</strong></a>,  
                                     
-                                    <a href="/technology/tables.html" ><strong>Tables</strong></a>, 
+                                    <a href="/technology/tables.html" ><strong>Tables</strong></a> 
                                     
                                 
                                 </li>
@@ -3786,12 +3811,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3836,7 +3861,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Aloha From Hawaii  Aloha-Hawaii.com</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3847,24 +3872,24 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_6"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>, 
+                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>, 
+                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>,  
                                     
-                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>, 
+                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>,  
                                     
-                                    <a href="/technology/ssi.html" ><strong>SSI</strong></a>, 
+                                    <a href="/technology/ssi.html" ><strong>SSI</strong></a>,  
                                     
-                                    <a href="/technology/tables.html" ><strong>Tables</strong></a>, 
+                                    <a href="/technology/tables.html" ><strong>Tables</strong></a> 
                                     
                                 
                                 </li>
@@ -3873,12 +3898,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a>, 
+                                    <a href="/industry/tourism/" ><strong>Tourism</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -3923,7 +3948,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Safari Helicopters</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -3934,20 +3959,20 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_5"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>, 
+                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>,  
                                     
-                                    <a href="/technology/flash.html" ><strong>Flash</strong></a>, 
+                                    <a href="/technology/flash.html" ><strong>Flash</strong></a>,  
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>, 
+                                    <a href="/technology/perl.html" ><strong>Perl</strong></a> 
                                     
                                 
                                 </li>
@@ -3956,12 +3981,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/tours/" ><strong>Tours</strong></a>, 
+                                    <a href="/industry/tours/" ><strong>Tours</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -4006,7 +4031,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Storytelling for the New Millennium Cyber Cafe</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -4017,16 +4042,16 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_4"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/html.html" ><strong>HTML</strong></a>, 
+                                    <a href="/technology/html.html" ><strong>HTML</strong></a>,  
                                     
-                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>, 
+                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>,  
                                     
-                                    <a href="/technology/tables.html" ><strong>Tables</strong></a>, 
+                                    <a href="/technology/tables.html" ><strong>Tables</strong></a> 
                                     
                                 
                                 </li>
@@ -4035,12 +4060,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/education/" ><strong>Education</strong></a>, 
+                                    <a href="/industry/education/" ><strong>Education</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -4085,7 +4110,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="modal-body">
+                        <div>
                             <h2>Kauai Exotix</h2>
                             <hr class="icon-kc-logo-primary">
                             
@@ -4096,22 +4121,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="modal-body">
+                        <div>
                             <div class="text-justify" id="post_content_3"></div>
                             <ul class="list-inline item-details">
                                 <li>Technologies:
                                     
-                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>, 
+                                    <a href="/technology/cgi.html" ><strong>CGI</strong></a>,  
                                     
-                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>, 
+                                    <a href="/technology/e-commerce.html" ><strong>E-commerce</strong></a>,  
                                     
-                                    <a href="/technology/gcc.html" ><strong>GCC</strong></a>, 
+                                    <a href="/technology/gcc.html" ><strong>GCC</strong></a>,  
                                     
-                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>, 
+                                    <a href="/technology/javascript.html" ><strong>Javascript</strong></a>,  
                                     
-                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>, 
+                                    <a href="/technology/netsite-server-map.html" ><strong>Netsite Server Map</strong></a>,  
                                     
-                                    <a href="/technology/perl.html" ><strong>Perl</strong></a>, 
+                                    <a href="/technology/perl.html" ><strong>Perl</strong></a> 
                                     
                                 
                                 </li>
@@ -4120,12 +4145,12 @@
                                 </li>
                                 <li>Industries:
                                     
-                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a>, 
+                                    <a href="/industry/e-commerce/" ><strong>E-Commerce</strong></a> 
                                     
 
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -4183,9 +4208,16 @@
     Handlebars.registerHelper("formatMarkdown", function(content) {
       return new Handlebars.SafeString(marked(content));
     });
-
-
-
+    var showMore = function (proj){
+        $('.portfolio-item').removeClass(proj);
+        $('.show_'+proj).hide();
+        if(proj=='fourth_more'){
+            $('.show_half_more').show();
+        }
+        if(proj=='half_more'){
+            $('.three_fourth_more').show();
+        }
+    }
 </script>
 
 
