@@ -1,71 +1,9 @@
  <!-- Project Section -->
-    <section class="portfolio-item post-page" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 " id="portfolio-content">
-                            <h2 class="text-center">{{ page.title }}</h2>
-                            <hr class="icon-kc-logo-primary">
-                            {% if page.liveurl != null %}
-                            <a href="{{ page.liveurl }}" target="_blank" class="modal-link">
-                                <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered img-post" alt="{{ page.alt }}">
-                            </a>
-                            {% else %}
-                            <img src="/img/portfolio/{{ page.img }}" class="img-responsive img-centered img-post" alt="{{ page.alt }}">
-                            {% endif %}
-                            <div class="text-justify post_content">{{ content }}</div>
-                            <ul class="list-inline item-details">
-                                <li>Technologies:
-                                    {% for tag in page.tags %}
-                                    <a href="/technology/{{ tag | slugify }}.html" ><strong>{{ tag }}</strong></a>, 
-                                    {% endfor %}
-                                
-                                </li>
-                                <li>Date:
-                                    <strong>{{ page.date | date: "%B, %Y" }}</strong>
-                                </li>
-                                <li>Industries:
-                                    {% for categories in page.categories %}
-                                    <a href="/industry/{{ categories | slugify }}/" ><strong>{{ categories}}</strong></a>, 
-                                    {% endfor %}
-
-                                </li>
-                            </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-{% raw %}
-  <script class="content-template" type="text/x-handlebars-template">
-    <p>{{formatMarkdown cells.Description}}</p>
-  </script>
-{% endraw %}
-
+<section class="portfolio-item post-page" id="portfolio">
+    {% include project.html singlepage=true %}
+</section>
 <script>    
-    
-    Handlebars.registerHelper("formatMarkdown", function(content) {
-      return marked(content); 
-    });
-
-
-
     $(document).ready(function() {
-    // Define spreadsheet URL.
-    var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
-
-    // Compile the Handlebars template for HR leaders.
-    var ContentTemplate = Handlebars.compile($('.content-template').html());
-
-    // Load top five HR leaders.
-    $('.post_content').sheetrock({
-      url: mySpreadsheet,
-      query: "select A,B,C,D,E,F,G,H,I,J where A = '{{ page.projectID }}'",
-      rowTemplate: ContentTemplate,
-      callback: function (error, options, response) {
-          console.log(error, options, response);
-      }
-    });
+        projectContent({{ page.projectID }});
     });
 </script>
-
-

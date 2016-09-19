@@ -1,11 +1,31 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>
+      {% if page.layout == 'post' %}
+        {{ page.title}} project at {{ site.title }}
+      {% elsif page.layout == 'categories' %}
+        {{ page.title }} {{ site.category_dir }} projects at {{ site.title }}
+      {% elsif page.layout == 'tag_page' %}
+        Projects built with {{ page.tag }} at {{ site.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="
+      {% if page.layout == 'post' %}
+        {{ page.content | strip_html  | truncatewords: 25}}
+      {% elsif page.layout == 'categories' %}
+        Details of {{ page.title }} {{ site.category_dir }} projects at {{ site.title }}
+      {% elsif page.layout == 'tag_page' %}
+        Projects built with {{ page.tag }} at {{ site.title }}
+      {% else %}
+        {{ site.description }}
+      {% endif %}
+    ">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
+    <!-- {{ page.layout }} -->
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ '/css/font-awesome/css/font-awesome.min.css' | prepend: site.baseurl }}">
