@@ -96,7 +96,9 @@ blockquote{
 .fourth_more,.half_more,.three_fourth_more, .show_half_more,.show_three_fourth_more{
     display:none;
 }
-
+.post-title{
+    text-align:center;
+}
 hr.star-light,
 hr.star-primary, hr.icon-kc-logo-light, hr.icon-kc-logo-primary {
     margin: 25px auto 30px;
