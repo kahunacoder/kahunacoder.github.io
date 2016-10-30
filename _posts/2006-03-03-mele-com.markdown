@@ -1,31 +1,30 @@
----
+--- 
 author: admin
 status: publish
-liveurl: http://mele.com/
-status: publish
-comments: false
-date: 2006-03-03 19:22:06+00:00
 layout: post
-slug: mele-com
-title: Mele.com
-modal-id: 49
-projectID: 31
-img: mel.jpg
-alt: Mele.com
+projectID: "31"
+Date: "3/3/2006"
+Title: "Mele.com"
+Status: "1"
+url: "http://www.mele.com/"
+image: "mel.jpg"
+client: "Graphic Communication"
+Owner: "Mele.com"
+Location: "Hanalei, Hawaii"
 categories:
 - E-Commerce
 tags:
 - AJAX
-- CMS
-- CSS
-- E-commerce
-- Express Checkout
-- HTML
-- Javascript
-- MySql
-- PayPal
-- PHP
-- Shopping Cart
-- SVN
----
-Mele.com
+-  CMS
+-  CSS
+-  E-commerce
+-  Express Checkout
+-  HTML
+-  Javascript
+-  MySql
+-  PayPal
+-  PHP
+-  Shopping Cart
+-  SVN
+--- 
+

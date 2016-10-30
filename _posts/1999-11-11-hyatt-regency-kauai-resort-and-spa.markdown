@@ -1,19 +1,20 @@
----
+--- 
 author: admin
 status: publish
-comments: false
-date: 1999-11-11 19:29:56+00:00
 layout: post
-slug: hyatt-regency-kauai-resort-and-spa
-title: Hyatt Regency Kauai Resort and Spa
-modal-id: 56
-projectID: 10
-img: hyt.jpg
-alt: Hyatt Regency Kauai Resort and Spa
+projectID: "10"
+Date: "11/11/1999"
+Title: "Hyatt Regency Kauai Resort and Spa"
+Status: "1"
+url: "http://web.archive.org/web/20000304121820/www.kauai-hyatt.com/home.html"
+image: "hyt.jpg"
+client: "Graphic Communication"
+Owner: "Hyatt Regency Kauai Resort and Spa"
+Location: "Poipu, Kauai, Hawaii"
 categories:
 - Accommodations
 tags:
 - HTML
-- Javascript
----
-Hyatt Regency Kauai Resort and Spa
+-  Javascript
+--- 
+

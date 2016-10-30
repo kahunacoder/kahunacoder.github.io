@@ -1,23 +1,24 @@
----
+--- 
 author: admin
 status: publish
-comments: false
-date: 2005-11-28 19:22:58+00:00
 layout: post
-slug: pacific-tile
-title: Pacific Tile
-modal-id: 50
-projectID: 27
-img: pct.jpg
-alt: Pacific Tile
+projectID: "27"
+Date: "11/28/2005"
+Title: "Pacific Tile"
+Status: "1"
+url: "http://www.pacific-tile.com/"
+image: "pct.jpg"
+client: "Graphic Communication"
+Owner: "Pacific Tile"
+Location: "Lihue, Hawaii"
 categories:
 - Construction
 tags:
 - CMS
-- CSS
-- HTML
-- Javascript
-- MySql
-- PHP
----
-Pacific Tile
+-  CSS
+-  HTML
+-  Javascript
+-  MySql
+-  PHP
+--- 
+

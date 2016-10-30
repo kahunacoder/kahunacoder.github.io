@@ -43,7 +43,7 @@ tag_page_layout: tag_page
 tag_page_dir: technology
 
 category_dir : industry
-category_title_prefix: ''
+#category_title_prefix: ''
 
 gems:
   - jekyll-sitemap

@@ -1,22 +1,23 @@
----
+--- 
 author: admin
 status: publish
-comments: false
-date: 2001-11-11 19:31:27+00:00
 layout: post
-slug: coconut-isles-trading-company
-title: Coconut Isles Trading Company
-modal-id: 57
-projectID: 15
-img: cit.jpg
-alt: Coconut Isles Trading Company
+projectID: "15"
+Date: "11/11/2001"
+Title: "Coconut Isles Trading Company"
+Status: "1"
+url: "http://web.archive.org/web/19990428033607/www.polynesiangifts.com/"
+image: "cit.jpg"
+client: "Graphic Communication"
+Owner: "Coconut Isles Trading Company"
+Location: "Oahu, Hawaii"
 categories:
 - E-Commerce
 tags:
 - CGI
-- E-commerce
-- HTML
-- Javascript
-- Perl
----
-Coconut Isles Trading Company
+-  E-commerce
+-  HTML
+-  Javascript
+-  Perl
+--- 
+

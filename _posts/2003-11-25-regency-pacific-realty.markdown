@@ -1,23 +1,24 @@
----
+--- 
 author: admin
 status: publish
-comments: false
-date: 2003-11-25 19:23:54+00:00
 layout: post
-slug: regency-pacific-realty
-title: Regency Pacific Realty
-modal-id: 51
-projectID: 20
-img: rpr.jpg
-alt: Regency Pacific Realty
+projectID: "20"
+Date: "11/25/2003"
+Title: "Regency Pacific Realty"
+Status: "1"
+url: "http://www.regencypacificrealty.com/"
+image: "rpr.jpg"
+client: "Graphic Communication"
+Owner: "Regency Pacific Realty"
+Location: "Princeville, Hawaii"
 categories:
 - Real Estate
 tags:
 - CMS
-- CSS
-- HTML
-- Javascript
-- MySql
-- PHP
----
-Regency Pacific Realty
+-  CSS
+-  HTML
+-  Javascript
+-  MySql
+-  PHP
+--- 
+

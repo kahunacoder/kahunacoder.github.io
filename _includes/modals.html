@@ -17,7 +17,7 @@
 
                 $('#portfolioModal-{{ post.projectID }}').on('show.bs.modal', function (e) {
                     if(project_viewed_{{ post.projectID }} == false){
-                        projectContent({{ post.projectID }});
+                        //projectContent({{ post.projectID }});
                         project_viewed_{{ post.projectID }} = true;
                     }
                 });

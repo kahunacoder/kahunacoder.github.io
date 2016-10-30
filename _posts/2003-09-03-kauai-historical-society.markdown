@@ -1,21 +1,22 @@
----
+--- 
 author: admin
 status: publish
-comments: false
-date: 2003-09-03 18:42:16+00:00
 layout: post
-slug: kauai-historical-society
-title: Kauai Historical Society
-modal-id: 64
-projectID: 18
-img: khs.jpg
-alt: Kauai Historical Society
+projectID: "18"
+Date: "9/3/2003"
+Title: "Kauai Historical Society"
+Status: "1"
+url: "http://kauaihistoricalsociety.org/"
+image: "khs.jpg"
+client: "Graphic Communication"
+Owner: "Kauai Historical Society"
+Location: "Kauai, Hawaii"
 categories:
 - Education
 tags:
 - CSS
-- HTML
-- Javascript
-- PHP
----
-Kauai Historical Society
+-  HTML
+-  Javascript
+-  PHP
+--- 
+

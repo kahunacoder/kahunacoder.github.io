@@ -1,4 +1,4 @@
-{% if forloop.length > 24 %}
+{% if forloop.length > 20 %}
     {% assign fourth = forloop.length | divided_by:4 %}
     {% if forloop.index > fourth %}
         {% assign fourth_more='fourth_more' %}
@@ -30,6 +30,6 @@
             </div>
         </div>
         {% endif %}
-        <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-grayscale" alt="{{ post.alt }}">
+        <img src="/img/portfolio/{{ post.image }}" class="img-responsive img-grayscale" alt="{{ post.alt }}">
     </a>
 </div>
