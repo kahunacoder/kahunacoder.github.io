@@ -63,9 +63,7 @@
     <![endif]-->
 </head>
 
-
-
-    <body id="page-top" class="index">
+  <body id="page-top" class="index">
        <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -87,13 +85,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Project</a>
+                        <a href="#portfolio">Projects</a>
                     </li>
-                     <li class="page-scroll">
-                        <a href="#cloud">Clouds</a>
-                    </li>
-                   <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                    <li class="page-scroll">
+                        <a href="#cloud">Tags</a>
                     </li>
                 </ul>
             </div>
@@ -101,7 +96,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
 
      <!-- Project Section -->
 <section class="portfolio-item post-page" id="portfolio">
@@ -151,18 +145,21 @@
                         
 
                     </li>
+                    <li>Employer/Client:
+                        <strong>Kahuna Coding</strong>
+                    </li>
+                    <li>Site Owner:
+                        <strong>Kahuna Coding</strong>
+                    </li>
+                    <li>Owner Location:
+                        <strong>Cocoa, Florida</strong>
+                    </li>
                 </ul>
                 
             </div>
         </div>
     </div>
 </div>
-
-<!-- <script id="content-template_54" type="text/x-handlebars-template">
-    <p>{{formatMarkdown cellsArray.[0]}}</p>
-</script>
-
- -->
 
 
 </section>
@@ -463,7 +460,7 @@
                     <div class="footer-col col-md-4">
                         <h3>Credits</h3>
                         <p>
-                            This site is meant to showcase projects that Gary Smith ( Kahuna Coder <a style="font-size:.7em;color:#fff;" href="javascript:void(0);" title="So who is Kahuna Coder then and what does it mean?" data-trigger="hover" data-toggle="popover" data-placement="left" data-content="Well, Kahuna Coder is my on line handle. I created it to differentiate myself from the thousands of other Gary Smith's on line. Having lived in Hawaii for 35+ years I used a Hawaiian word in my handle that means among other things an expert in any profession. It's interesting how the other meanings of kahuna are priest, sorcerer, magician, wizard, minister. I think the work of most experts can appear magical to the laymen."><sup><i class="fa fa-question"></i></sup></a> ) has worked on. 
+                            This site is meant to showcase projects that Gary Smith ( Kahuna Coder <a style="font-size:.7em;color:#fff;" href="javascript:void(0);" title="So who is Kahuna Coder then and what does it mean?" data-trigger="click" data-toggle="popover" data-placement="left" data-content="Well, Kahuna Coder is my on line handle. I created it to differentiate myself from the thousands of other Gary Smith's on line. Having lived in Hawaii for 35+ years I used a Hawaiian word in my handle that means among other things an expert in any profession. It's interesting how the other meanings of kahuna are priest, sorcerer, magician, wizard, minister. I think the work of most experts can appear magical to the laymen."><sup><i class="fa fa-question"></i></sup></a> ) has worked on. 
                         </p>
                     </div>
                 </div>
@@ -522,25 +519,7 @@
             $('.three_fourth_more').show();
         }
     }
-    
-
-    function projectContent(projectID){
-        var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
-        eval("var ContentTemplate_"+projectID+" = Handlebars.compile($('#content-template_"+projectID+"').html())");
-
-        $('#post_content_'+projectID).sheetrock({
-          url: mySpreadsheet,
-          query: "select L where A = "+projectID,
-          labels: ['Description'],
-          rowTemplate: "ContentTemplate_"+projectID
-        });
-    }
 </script>
 
-
-
-
-
-
-    </body>
+   </body>
 </html>
