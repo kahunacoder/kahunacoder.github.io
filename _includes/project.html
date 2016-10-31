@@ -37,6 +37,15 @@
                         {% endfor %}
 
                     </li>
+                    <li>Employer/Client:
+                        <strong>{{ post.client }}</strong>
+                    </li>
+                    <li>Site Owner:
+                        <strong>{{ post.Owner }}</strong>
+                    </li>
+                    <li>Owner Location:
+                        <strong>{{ post.Location }}</strong>
+                    </li>
                 </ul>
                 {% if include.button == true %}
                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -45,10 +54,4 @@
         </div>
     </div>
 </div>
-
-<!-- <script id="content-template_{{ post.projectID }}" type="text/x-handlebars-template">
-    {% raw %}<p>{{formatMarkdown cellsArray.[0]}}</p>{% endraw %}
-</script>
-
- -->
 

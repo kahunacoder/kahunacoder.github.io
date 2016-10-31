@@ -33,21 +33,4 @@
             $('.three_fourth_more').show();
         }
     }
-    
-
-    function projectContent(projectID){
-        var mySpreadsheet = 'https://docs.google.com/a/kahunacoder.com/spreadsheets/d/11HGue5jd7wlVVya84FzgtAdkLfbQUAM9rNtXLY_0ZUo/pub?gid=0';
-        eval("var ContentTemplate_"+projectID+" = Handlebars.compile($('#content-template_"+projectID+"').html())");
-
-        $('#post_content_'+projectID).sheetrock({
-          url: mySpreadsheet,
-          query: "select L where A = "+projectID,
-          labels: ['Description'],
-          rowTemplate: "ContentTemplate_"+projectID
-        });
-    }
 </script>
-
-
-
-
